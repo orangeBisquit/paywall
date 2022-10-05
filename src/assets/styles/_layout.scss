@@ -1,0 +1,32 @@
+.wrapper {
+	position: relative;
+}
+
+.container {
+	max-width: $container;
+	padding-left: 55px;
+	padding-right: 55px;
+	margin: auto;
+	box-sizing: border-box;
+	@include max-screen($laptop-sm) {
+		padding-left: 44px;
+		padding-right: 44px;
+	}
+	@include max-screen($laptop-sm-2) {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	@include max-screen($mobile-only) {
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+	&._lg {
+		max-width: 1566px;
+	}
+	&._sm {
+		max-width: 1290px;
+	}
+	&._full-width {
+		max-width: 100%;
+	}
+}

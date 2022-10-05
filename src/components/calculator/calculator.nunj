@@ -1,0 +1,67 @@
+<section id="calculator" class="calculator" data-calculator>
+	<div class="calculator__container container">
+		<h2 class="calculator__title title">Сколько можно заработать с&nbsp;Paywall</h2>
+		<div class="calculator__grid">
+			<form class="calculator__form">
+				<img class="calculator__decoration" src="../../assets/images/calculator/decoration-circles.svg" width="502" height="539">
+				<div class="calculator__currencies">
+					<button class="calculator__currency _active" type="button" data-calculator-currency="руб.">
+						<span class="calculator__currency-inner">₽</span>
+					</button>
+					<button class="calculator__currency" type="button" data-calculator-currency="$">
+						<span class="calculator__currency-inner">$</span>
+					</button>
+					<button class="calculator__currency" type="button" data-calculator-currency="€">
+						<span class="calculator__currency-inner">€</span>
+					</button>
+				</div>
+				<div class="calculator__body">
+					<div class="calculator__body-item">
+						<div class="calculator__body-text-wrapper">
+							<p class="calculator__body-text">Количество подписчиков открытого канала</p>
+							<p class="calculator__body-amount">
+								<span data-calculator-subs-label>10000</span>
+								чел.
+							</p>
+						</div>
+						<div class="calculator__range-draggable" data-calculator-subs-range></div>
+					</div>
+					<div class="calculator__body-item">
+						<div class="calculator__body-text-wrapper">
+							<p class="calculator__body-text">Цена месячной <br> подписки</p>
+							<p class="calculator__body-amount">
+								<span data-calculator-price-label>500</span>
+								<span data-calculator-currency-name>руб.</span>
+							</p>
+						</div>
+						<div class="calculator__range-draggable" data-calculator-price-range></div>
+					</div>
+					{{ icon({
+							iconName: 'emoji-ooo',
+							className: 'calculator__emoji-ooo'
+					}) }}
+					{{ icon({
+							iconName: 'smile-dollar',
+							className: 'calculator__emoji-dollar'
+					}) }}
+				</div>
+			</form>
+			<div class="calculator__content">
+				{{ icon({
+						iconName: 'arrow-rounded',
+						className: 'calculator__arrow-icon'
+				}) }}
+				<p class="calculator__earnings">
+					Вы сможете заработать <br> от
+					<span class="calculator__earnings-inner">
+						<span class="calculator__earnings-min" data-calculator-revenue-min data-auto-show="default">20 000</span> до <span class="calculator__earnings-max" data-calculator-revenue-max data-auto-show="default">120 000</span>
+						<span data-calculator-result-currency>₽</span>
+					</span>
+					в&nbsp;месяц
+				</p>
+				<p class="calculator__conversion">Расчеты основаны на&nbsp;средней (от&nbsp;0.5% до&nbsp;3%) конверсии перехода аудитории в&nbsp;платных подписчиков. Конверсия зависит от&nbsp;продукта и&nbsp;платежеспособности аудитории.</p>
+				<button class="calculator__button-start button">Начать зарабатывать</button>
+			</div>
+		</div>
+	</div>
+</section>

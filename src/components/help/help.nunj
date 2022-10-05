@@ -1,0 +1,23 @@
+<section id="help" class="help">
+	<div class="help__container container">
+		<h3 class="help__title title _light" >Нужна поддержка?</h3>
+		<div class="help__inner">
+			<p class="help__text">Для вас мы&nbsp;создали бесплатную обучающую рассылку: вы&nbsp;узнаете, как набирать подписчиков и&nbsp;общаться с&nbsp;ними, как реагировать на&nbsp;негатив, какой контент публиковать в&nbsp;закрытом канале и&nbsp;многое другое.</p>
+			<p class="help__text">Всего 9&nbsp;писем, после которых вы&nbsp;узнаете все секреты монетизации в&nbsp;Paywall. Подписывайтесь!</p>
+			<button class="help__button button _special" data-mailing-modal-open>Подписаться</button>
+			<div class="help__decorations-wrapper">
+				{{ icon({
+						iconName: 'help-semi-circle',
+						className: 'help__semi-circle-img'
+				}) }}
+				<div class="help__mail-icons-wrapper">
+					{{ icon({
+							iconName: 'email-heart',
+							className: 'help__mail-heart-img'
+					}) }}
+					<img class="help__mail-arrow-img" src="../../assets/images/help/mail-arrow-img.png" width="59" height="59" data-auto-show="default">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

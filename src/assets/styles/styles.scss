@@ -1,0 +1,40 @@
+// ======= GLOBAL =======
+@import 'constants';
+@import 'lib/base';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+@import 'layout';
+// @import 'controls';
+
+// ======= COMPONENTS =======
+@import '../../components/lang-switch/lang-switch';
+@import '../../components/header/header';
+@import '../../components/menu/menu';
+@import '../../components/button/button';
+@import '../../components/link/link';
+@import '../../components/icon-special/icon-special';
+@import '../../components/title/title';
+@import '../../components/support/support';
+@import '../../components/menu-modal/menu-modal';
+@import '../../components/mailing/mailing';
+@import '../../components/cookie/cookie';
+
+// ======= SECTIONS =======
+@import '../../components/hero/hero';
+@import '../../components/animations/animations';
+@import '../../components/how-it-works/how-it-works';
+@import '../../components/superpowers/superpowers';
+@import '../../components/payments/payments';
+@import '../../components/calculator/calculator';
+@import '../../components/world/world';
+@import '../../components/how-to-start/how-to-start';
+@import '../../components/help/help';
+@import '../../components/reviews/reviews';
+@import '../../components/telegram/telegram';
+@import '../../components/model/model';
+@import '../../components/beginner/beginner';
+@import '../../components/footer/footer';
+
+// ======= PAGES =======
+@import 'pages/main';

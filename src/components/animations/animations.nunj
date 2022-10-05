@@ -1,0 +1,182 @@
+{% from '../icon-special/icon-special.nunj' import iconSpecial %}
+
+<section id="animations" class="animations">
+	<div class="animations__inner">
+		<div class="animations__blue-wrapper">
+			<div class="animations__container container">
+				<h2 class="animations__header">Что это</h2>
+				<div class="animations__frame">
+					<div class="animations__video">
+						<div class="animations__video-wrapper">
+							<div class="animations__video-inner"></div>
+							<img class="animations__video-frame-image" src="../../assets/images/animations/mockup-video-frame.png" width="378" height="756">
+							<img class="animations__video-first-shot" src="../../assets/images/animations/mockup.jpg" width="378" height="756">
+							<video class="animations__video-frame-mockup" loop muted>
+								<source src="../../assets/video/mockup.mp4" type="video/mp4">
+							</video>
+						</div>
+					</div>
+					<button class="animations__video-btn" type="button">
+						<span class="animations__video-btn-icon">
+							{{ icon({
+								iconName: 'play',
+								className: '',
+								attributes: 'width="22" height="25" viewBox="0 0 22 25"'
+							}) }}
+						</span>
+						Смотреть
+					</button>
+					<div class="animations__tab _active _visible" data-video-scene="1">
+						<h2 class="animations__title">Я&nbsp;фитнес модель <br>и&nbsp;как&nbsp;же я&nbsp;могу <br>заработать</h2>
+						<p class="animations__accent-text _tab-1">кроме рекламы?</p>
+						<div class="animations__decorations">
+							<div class="animations__decorations-inner _tab-1">
+								<img class="animations__semi-circle-image" src="../../assets/images/animations/semi-circle-1.png" width="522" height="308" alt="" aria-hidden="true">
+								<img class="animations__woman" src="../../assets/images/animations/tab-1-woman.png" width="390" height="545" alt="" aria-hidden="true">
+								<div class="animations__decorations-icons">
+									{{ iconSpecial({
+										folder: "animations",
+										name: "tab-1-emoji-1",
+										width: 55,
+										height: 55,
+										className: "animations__decorations-icon _tab-1-emoji-1"
+									}) }}
+									{{ iconSpecial({
+										folder: "animations",
+										name: "tab-1-emoji-2",
+										width: 55,
+										height: 55,
+										className: "animations__decorations-icon _tab-1-emoji-2"
+									}) }}
+									{{ iconSpecial({
+										folder: "animations",
+										name: "tab-1-emoji-3",
+										width: 55,
+										height: 55,
+										className: "animations__decorations-icon _tab-1-emoji-3"
+									}) }}
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="animations__tab _temp" data-video-scene="2">
+						<h2 class="animations__title _tab-2">Могу рассказать <br>о&nbsp;правильном <br>образе жизни <br>и&nbsp;тренировках</h2>
+						<p class="animations__accent-text">
+							<span class="animations__accent-text-wrapper">в закрытом телеграм&#8209;канале</span>
+						</p>
+						<div class="animations__decorations">
+							<div class="animations__decorations-inner _tab-2">
+								<img class="animations__semi-circle-image _tab-2" src="../../assets/images/animations/semi-circle-2.png" width="522" height=="202" alt="" aria-hidden="true">
+								<img class="animations__woman _tab-2" src="../../assets/images/animations/tab-2-woman.png" width="371" height=="582" alt="" aria-hidden="true">
+								<div class="animations__decorations-icons">
+									{{ iconSpecial({
+										folder: "animations",
+										name: "tab-2-emoji-1",
+										width: 55,
+										height: 55,
+										className: "animations__decorations-icon _tab-2-emoji-1"
+									}) }}
+									{{ iconSpecial({
+										folder: "animations",
+										name: "tab-2-emoji-2",
+										width: 55,
+										height: 55,
+										className: "animations__decorations-icon _tab-2-emoji-2"
+									}) }}
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="animations__tab _temp" data-video-scene="3">
+						<h2 class="animations__title">Настраиваю <br> Paywall</h2>
+						<div class="animations__decorations">
+							<div class="animations__decorations-inner _tab-3">
+								<img class="animations__semi-circle-image _tab-3" src="../../assets/images/animations/semi-circle-3.png" width="537" height="245" alt="" aria-hidden="true">
+								<img class="animations__woman _tab-3" src="../../assets/images/animations/tab-3-woman.png" width="458" height="575" alt="" aria-hidden="true">
+								<div class="animations__decorations-icons">
+									{{ iconSpecial({
+										folder: "animations",
+										name: "tab-3-emoji-1",
+										width: 55,
+										height: 55,
+										className: "animations__decorations-icon _tab-3-emoji-1"
+									}) }}
+									{{ iconSpecial({
+										folder: "animations",
+										name: "tab-3-emoji-2",
+										width: 55,
+										height: 55,
+										className: "animations__decorations-icon _tab-3-emoji-2"
+									}) }}
+									{{ iconSpecial({
+										folder: "animations",
+										name: "tab-3-emoji-3",
+										width: 55,
+										height: 55,
+										className: "animations__decorations-icon _tab-3-emoji-3"
+									}) }}
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="animations__tab _temp" data-video-scene="4">
+						<h2 class="animations__title _tab-4">Публикую контент. <br>Размещаю ссылку <br>в профиле <br>с призывом <br>подписаться</h2>
+						<p class="animations__accent-text">
+							<span class="animations__accent-text-wrapper">на мои <br> фитнес-советы</span>
+						</p>
+						<div class="animations__decorations">
+							<div class="animations__decorations-inner _tab-4">
+								<img class="animations__semi-circle-image _tab-4" src="../../assets/images/animations/semi-circle-4.png" width="837" height="305" alt="" aria-hidden="true">
+								<img class="animations__woman _tab-4" src="../../assets/images/animations/tab-4-woman.png" width="414" height="576" alt="" aria-hidden="true">
+								<div class="animations__decorations-icons">
+									{{ iconSpecial({
+										folder: "animations",
+										name: "tab-4-emoji-1",
+										width: 55,
+										height: 55,
+										className: "animations__decorations-icon _tab-4-emoji-1"
+									}) }}
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="animations__tab _temp" data-video-scene="5">
+						<h2 class="animations__title _tab-5">Получаю подписчиков, <br>деньги, каждый <br>месяц, много.<br>Продолжаю </h2>
+						<p class="animations__accent-text">
+							<span class="animations__accent-text-wrapper">размещать полезный контент</span>
+						</p>
+						<div class="animations__decorations">
+							<div class="animations__decorations-inner _tab-5">
+								<img class="animations__semi-circle-image _tab-5" src="../../assets/images/animations/semi-circle-4.png" width="837" height="305" alt="" aria-hidden="true">
+								<img class="animations__woman _tab-5" src="../../assets/images/animations/tab-5-woman.png" width="362" height="564" alt="" aria-hidden="true">
+								<div class="animations__decorations-icons">
+									{{ iconSpecial({
+										folder: "animations",
+										name: "tab-5-emoji-1",
+										width: 62,
+										height: 62,
+										className: "animations__decorations-icon _tab-5-emoji-1"
+									}) }}
+									{{ iconSpecial({
+										folder: "animations",
+										name: "tab-5-emoji-2",
+										width: 50,
+										height: 50,
+										className: "animations__decorations-icon _tab-5-emoji-2"
+									}) }}
+									{{ iconSpecial({
+										folder: "animations",
+										name: "tab-5-emoji-3",
+										width: 54,
+										height: 54,
+										className: "animations__decorations-icon _tab-5-emoji-3"
+									}) }}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

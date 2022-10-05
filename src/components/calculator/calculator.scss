@@ -1,0 +1,293 @@
+.calculator {
+	background: $default-gradient;
+	padding-top: 130px;
+	padding-bottom: 217px;
+	@include max-screen($laptop-sm) {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	@include max-screen($mobile-only) {
+		padding-top: 53px;
+		padding-bottom: 60px;
+	}
+	&__container {
+		max-width: 1484px;
+	}
+	&__grid {
+		position: relative;
+		display: grid;
+		grid-template-columns: 680fr 573fr;
+		column-gap: calc(122 / 1374 * 100%);
+		@include max-screen($laptop-sm) {
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+			grid-template-columns: 1fr;
+			row-gap: 120px;
+		}
+		@include max-screen($mobile-only) {
+			width: 90%;
+			row-gap: 65px;
+		}
+		@include max-screen($mobile) {
+			width: auto;
+		}
+	}
+	&__title {
+		margin-bottom: 53px;
+		@include max-screen($laptop-sm) {
+			width: auto;
+			padding-right: 0;
+		}
+		@include max-screen($mobile-only) {
+			margin-bottom: 28px;
+		}
+	}
+	&__form {
+		position: relative;
+		margin-top: 7px;
+		box-shadow: 0 49px 50px -11px rgba($c-dodger-blue, 0.09);
+		@include max-screen($laptop-sm) {
+			margin-top: 0;
+		}
+		@include max-screen($mobile-only) {
+			margin-left: 20px;
+			box-shadow: 0 22px 23px rgba($c-dodger-blue, 0.09);
+		}
+	}
+	&__decoration {
+		position: absolute;
+		left: -27.4%;
+		top: -25.2%;
+		width: calc(502 / 680 * 100%);
+		height: auto;
+		@include max-screen($laptop-sm) {
+			top: -27.2%;
+			width: calc(227 / 307 * 100%);
+		}
+	}
+	&__currencies {
+		position: relative;
+		z-index: 1;
+		display: flex;
+		border: 4px solid $c-pale-cornflower-blue;
+		border-width: 4px;
+		overflow: hidden;
+		background-color: $c-alice-blue;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+		@include max-screen($mobile-only) {
+			border-width: 1.8px;
+			border-top-left-radius: 9px;
+			border-top-right-radius: 9px;
+		}
+	}
+	&__currency {
+		border: 0;
+		border-right: 4px solid $c-pale-cornflower-blue;
+		padding: 9px 31px;
+		cursor: pointer;
+		line-height: 140%;
+		color: $c-dodger-blue;
+		background-color: $c-alice-blue;
+		@include fluid-font($mobile, $laptop-sm-2, 12px, 26px);
+		@include max-screen($mobile-only) {
+			padding: 3px 15px;
+			border-width: 1.8px;
+			border-top-left-radius: 9px;
+			border-top-right-radius: 9px;
+		}
+		&._active {
+			background-color: $c-white;
+		}
+	}
+	&__currency-inner {
+		display: block;
+		position: relative;
+	}
+	&__body {
+		position: relative;
+		z-index: 1;
+		padding-top: 50px;
+		padding-left: 58px;
+		padding-right: 57px;
+		padding-bottom: 67px;
+		border: 4px solid $c-pale-cornflower-blue;
+		background-color: $c-white;
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+		border-top: 0;
+		@include max-screen($mobile-only) {
+			padding-top: 24px;
+			padding-left: 26px;
+			padding-right: 28px;
+			padding-bottom: 26px;
+			border-width: 1.8px;
+			border-bottom-left-radius: 9px;
+			border-bottom-right-radius: 9px;
+		}
+	}
+	&__body-item {
+		&:first-child {
+			margin-bottom: 52px;
+			@include max-screen($mobile-only) {
+				margin-bottom: 24px;
+			}
+		}
+	}
+	&__body-text-wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin-bottom: 32px;
+		@include max-screen($mobile-only) {
+			margin-bottom: 15px;
+		}
+	}
+	&__body-text {
+		font-weight: 400;
+		line-height: 140%;
+		color: $c-catalina-blue;
+		max-width: calc(327 / 555 * 100%);
+		@include fluid-font($mobile, $laptop-sm-2, 12px, 26px);
+	}
+	&__body-amount {
+		background: $c-alice-blue;
+		padding: 14px 23px;
+		border-radius: 16px;
+		line-height: 140%;
+		color: $c-dodger-blue;
+		@include fluid-font($mobile, $laptop-sm-2, 12px, 26px);
+		@include max-screen($mobile-only) {
+			padding: 6px 10px;
+			border-radius: 7px;
+		}
+	}
+	&__body-range {
+		width: 100%;
+	}
+	&__earnings {
+		margin-bottom: 23px;
+		line-height: 120%;
+		@include fluid-font($mobile, $laptop-sm-2, 18px, 36px);
+		@include max-screen($laptop-sm) {
+			margin-bottom: 16px;
+			font-weight: 700;
+			text-align: center;
+		}
+	}
+	&__earnings-inner {
+		color: $c-dodger-blue;
+		font-weight: 700;
+		@include max-screen($laptop-sm) {
+			color: inherit;
+		}
+	}
+	&__conversion {
+		margin-bottom: 41px;
+		font-size: 26px;
+		line-height: 140%;
+		@include fluid-font($mobile, $laptop-sm-2, 16px, 26px);
+		@include max-screen($laptop-sm) {
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 30px;
+			line-height: 130%;
+			text-align: center;
+		}
+	}
+	&__range-draggable {
+		position: relative;
+		width: 100%;
+		height: 9px;
+		border-radius: 28px;
+		background: linear-gradient(0deg, #edf5fd, #edf5fd), #edf5fd;
+		@include max-screen($mobile-only) {
+			height: 4px;
+			border-radius: 13px;
+		}
+		.noUi {
+			&-handle {
+				top: -16px;
+				right: -18px;
+				width: 36px;
+				height: 36px;
+				border-radius: 50%;
+				background-color: $c-amber;
+				box-shadow: 0 13px 21px -6px $c-kournikova;
+				&::before,
+				&::after {
+					display: none;
+				}
+				&:hover {
+					cursor: pointer;
+				}
+				@include max-screen($mobile-only) {
+					top: -6px;
+					right: -9px;
+					width: 16px;
+					height: 16px;
+				}
+			}
+			&-tooltip {
+				display: none;
+			}
+		}
+	}
+	&__content {
+		position: relative;
+		padding-right: 127px;
+		@include max-screen($laptop-sm) {
+			padding-right: 0;
+		}
+	}
+	&__button-start {
+		min-width: 100%;
+		@include max-screen($laptop-sm) {
+			background-color: $c-kournikova;
+			border: none;
+			border-radius: 12px;
+			color: $c-catalina-blue;
+			&:hover {
+				background-color: $c-gold-tips;
+				border-color: $c-gold-tips;
+			}
+			&:active {
+				background-color: $c-gold-tips;
+				border-color: $c-gold-tips;
+				box-shadow: inset 0px 1px 2px $c-dark-goldenrod;
+			}
+		}
+	}
+	&__arrow-icon {
+		width: 262px;
+		height: 82px;
+		position: absolute;
+		bottom: -19%;
+		left: -15.8%;
+		@include max-screen($laptop-sm) {
+			display: none;
+		}
+	}
+	&__emoji-ooo {
+		--size: 105px;
+		width: var(--size);
+		height: var(--size);
+		position: absolute;
+		bottom: -16%;
+		left: -6.3%;
+		transform: rotate(-25deg);
+		@include smoothValue('--size', 47px, 105px, $mobile, $laptop-sm-2);
+	}
+	&__emoji-dollar {
+		--size: 73px;
+		width: var(--size);
+		height: var(--size);
+		position: absolute;
+		bottom: -10.2%;
+		left: 67.7%;
+		transform: rotate(20deg);
+		@include smoothValue('--size', 33px, 73px, $mobile, $laptop-sm-2);
+	}
+}

@@ -1,0 +1,112 @@
+.how-it-works {
+	@include smoothValue('padding-top', 60px, 133px, $mobile, $desktop);
+	@include smoothValue('padding-bottom', 60px, 129px, $mobile, $desktop);
+	@include max-screen($mobile) {
+		padding-top: 30px;
+	}
+	&__container {
+		@include smoothValue('padding-left', 24px, 55px, $mobile, $desktop);
+		@include smoothValue('padding-right', 19px, 55px, $mobile, $desktop);
+	}
+	&__title {
+		margin-bottom: 28px;
+		@include max-screen($mobile-only) {
+			margin-bottom: 21px;
+		}
+		@include max-screen($mobile-only-2) {
+			width: 80%;
+		}
+		@include max-screen($mobile-md) {
+			width: 90%;
+		}
+	}
+	&__text {
+		margin: 0 auto;
+		margin-bottom: 38px;
+		color: $c-catalina-blue;
+		font-weight: 400;
+		line-height: 140%;
+		text-align: center;
+		letter-spacing: 0.03em;
+		@include smoothValue('font-size', 20px, 26px, $mobile-only, $desktop);
+		@include max-screen($mobile-only-2) {
+			line-height: 130%;
+			@include smoothValue('font-size', 16px, 18px, $mobile, $mobile-only-2);
+			margin-bottom: 30px;
+		}
+		&._bottom {
+			width: clamp(84px, 100%, 1001px);
+			margin-bottom: 0;
+		}
+	}
+	&__list {
+		display: flex;
+		position: relative;
+		justify-content: space-between;
+		margin-bottom: 37px;
+		@include max-screen($laptop-sm) {
+			width: clamp(328px, 90%, 760px);
+			margin: 0 auto;
+			margin-bottom: 40px;
+			row-gap: 25px;
+			flex-wrap: wrap;
+		}
+		@include max-screen($mobile-only-2) {
+			width: 100%;
+			column-gap: calc(31 / 332 * 100%);
+			justify-content: center;
+			row-gap: 19px;
+			margin-bottom: 28px;
+		}
+		@include max-screen(374px) {
+			column-gap: calc(20 / 332 * 100%);
+		}
+	}
+	&__item {
+		display: flex;
+		position: relative;
+		flex-direction: column;
+		align-items: center;
+		width: 10.6%;
+		@include max-screen($laptop-sm) {
+			width: 22%;
+		}
+		@include max-screen($mobile-only-2) {
+			box-sizing: border-box;
+			width: clamp(90px, calc(90 / 375 * 100%), 200px);
+		}
+		@include max-screen(374px) {
+			width: calc(90 / 332 * 100%);
+		}
+	}
+	&__item-image-wrapper {
+		padding: 5px;
+		border: 1px dashed $c-dodger-blue;
+		margin-bottom: 12px;
+		border-radius: 50%;
+		@include max-screen($laptop-sm) {
+			margin-bottom: 8px;
+		}
+		@include max-screen($mobile-only) {
+			padding: 3px;
+		}
+	}
+	&__item-image {
+		width: 100%;
+		height: auto;
+		border-radius: 50%;
+	}
+	&__item-name {
+		color: $c-catalina-blue;
+		font-size: 20px;
+		line-height: 140%;
+		text-align: center;
+		letter-spacing: 0.03em;
+		@include max-screen($mobile-only-2) {
+			@include smoothValue('font-size', 16px, 18px, $mobile, $mobile-only-2);
+		}
+		@include max-screen($mobile-md) {
+			font-size: 13px;
+		}
+	}
+}

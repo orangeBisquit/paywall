@@ -1,0 +1,12 @@
+.link {
+	font-weight: 400;
+	font-family: $default-font-family;
+	letter-spacing: 0.03em;
+	color: inherit;
+	cursor: pointer;
+	text-decoration: none;
+	@extend .animated;
+	&:hover {
+		color: $c-dodger-blue;
+	}
+}

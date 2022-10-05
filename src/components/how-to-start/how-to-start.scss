@@ -1,0 +1,323 @@
+.how-to-start {
+	@include smoothValue('padding-top', 60px, 130px, $mobile, $desktop);
+	@include smoothValue('padding-bottom', 60px, 125px, $mobile, $desktop);
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	&__title {
+		margin-bottom: 38px;
+		@include max-screen($mobile) {
+			width: 100%;
+			margin-bottom: 30px;
+		}
+	}
+	&__disclaimer {
+		display: inline-flex;
+		align-items: center;
+		margin: 0 auto;
+		margin-bottom: 92px;
+		padding: 16px 25px 16px 24px;
+		border-radius: 16px;
+		color: $c-dodger-blue;
+		font-size: 26px;
+		line-height: 140%;
+		text-align: center;
+		background-color: $c-alice-blue;
+		@include fluid-font($mobile, $desktop, 16px, 26px);
+		@include max-screen($tablet) {
+			margin-bottom: 60px;
+		}
+		@include max-screen($mobile) {
+			padding: 10px;
+			margin-bottom: 53px;
+		}
+	}
+	&__disclaimer-icon {
+		display: inline-block;
+		margin-right: 16px;
+		@include smoothValue('width', 25px, 35px, $mobile, $desktop);
+		@include smoothValue('height', 25px, 35px, $mobile, $desktop);
+		fill: none;
+		@include max-screen($mobile) {
+			margin-right: 7px;
+		}
+	}
+	&__steps-list {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 104px;
+		@include max-screen($laptop-sm-2) {
+			margin-bottom: 50px;
+		}
+		@include max-screen($mobile-only-2) {
+			margin-bottom: 0;
+		}
+	}
+	&__steps-item {
+		display: flex;
+		align-items: center;
+		@include max-screen($mobile-only-2) {
+			flex-direction: column;
+		}
+		&._1 {
+			padding-left: 68px;
+			margin-bottom: 34px;
+			@include max-screen($laptop-sm-2) {
+				padding-left: 32px;
+			}
+			@include max-screen($mobile-only-2) {
+				padding-left: 0;
+				margin-bottom: 70px;
+			}
+		}
+		&._2 {
+			align-self: flex-end;
+			padding-right: 67px;
+			margin-bottom: 42px;
+			@include max-screen($laptop-sm-2) {
+				padding-right: 32px;
+			}
+			@include max-screen($mobile-only-2) {
+				flex-direction: column-reverse;
+				padding-right: 0;
+				margin-bottom: 39px;
+			}
+		}
+		&._3 {
+			margin-bottom: 61px;
+			@include max-screen($mobile-only-2) {
+				margin-bottom: 65px;
+			}
+		}
+		&._4 {
+			padding-left: 60px;
+			align-self: center;
+			@include max-screen($mobile-only-2) {
+				flex-direction: column-reverse;
+				margin-bottom: 30px;
+				padding-left: 0;
+			}
+		}
+	}
+	&__step-number-wrapper {
+		position: relative;
+		display: inline-block;
+		@include max-screen($mobile-only-2) {
+			margin-bottom: 16px;
+		}
+		&._1 {
+			top: 4px;
+			@include max-screen($mobile-only-2) {
+				margin-left: 31px;
+			}
+			@include max-screen($mobile-only) {
+				margin-left: 0
+			}
+		}
+		&._2 {
+			top: -8px;
+			@include max-screen($mobile-only-2) {
+				margin-right: 31px;
+				margin-bottom: 7px;
+			}
+			@include max-screen($mobile-only) {
+				margin-right: 0
+			}
+		}
+		&._3 {
+			@include max-screen($mobile-only-2) {
+				margin-right: 27px;
+			}
+			@include max-screen($mobile-only) {
+				margin-right: 0
+			}
+		}
+		&._4 {
+			top: -6px;
+			@include max-screen($mobile-only-2) {
+				margin-right: 27px;
+				margin-bottom: 9px;
+			}
+			@include max-screen($mobile-only) {
+				margin-right: 0
+			}
+		}
+	}
+	&__step-number {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		color: $c-dodger-blue;
+		line-height: 115%;
+		text-align: center;
+		background-color: $c-alice-blue;
+		@include smoothValue('width', 108px, 248px, $mobile, $desktop);
+		@include smoothValue('height', 108px, 248px, $mobile, $desktop);
+		@include smoothValue('font-size', 50px, 96px, $mobile, $desktop);
+	}
+	&__step-icon-wrapper {
+		position: absolute;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		background: $c-white;
+		box-shadow: 0px 14.3407px 39.8352px -19.1209px rgba(64, 153, 247, 0.3);
+		@include smoothValue('width', 45px, 104px, $mobile, $desktop);
+		@include smoothValue('height', 45px, 104px, $mobile, $desktop);
+		&._mic {
+			top: -19%;
+			left: 42.6%;
+		}
+		&._strawberry {
+			top: -8%;
+			left: -9%;
+		}
+		&._cap {
+			top: 42%;
+			left: -27%;
+		}
+		&._kiss {
+			top: -27.2%;
+			left: 45.6%;
+		}
+		&._happy {
+			top: 8%;
+			left: 81%;
+		}
+		&._love {
+			top: 59%;
+			left: 73%;
+		}
+		&._fire {
+			top: -6%;
+			left: 69%;
+		}
+		&._smile-dollar {
+			top: 46%;
+			left: 81%;
+		}
+		&._euro {
+			top: -28%;
+			left: 43%;
+		}
+		&._ruble {
+			top: 8%;
+			left: 79%;
+		}
+		&._dollar {
+			top: 58%;
+			left: 70%;
+		}
+	}
+	&__step-icon {
+		position: relative;
+		&._mic {
+			top: -4px;
+			@include smoothValue('width', 21px, 46px, $mobile, $desktop);
+			@include smoothValue('height', 21px, 46px, $mobile, $desktop);
+		}
+		&._strawberry {
+			top: -5px;
+			left: -5px;
+			@include smoothValue('width', 23px, 51px, $mobile, $desktop);
+			@include smoothValue('height', 23px, 51px, $mobile, $desktop);
+		}
+		&._cap {
+			top: -2px;
+			@include smoothValue('width', 24px, 53px, $mobile, $desktop);
+			@include smoothValue('height', 24px, 53px, $mobile, $desktop);
+		}
+		&._kiss {
+			top: -4px;
+			left: -3px;
+			@include smoothValue('width', 24px, 54px, $mobile, $desktop);
+			@include smoothValue('height', 24px, 54px, $mobile, $desktop);
+		}
+		&._happy {
+			@include smoothValue('width', 24px, 56px, $mobile, $desktop);
+			@include smoothValue('height', 24px, 56px, $mobile, $desktop);
+		}
+		&._love {
+			@include smoothValue('width', 24px, 53px, $mobile, $desktop);
+			@include smoothValue('height', 24px, 53px, $mobile, $desktop);
+		}
+		&._fire {
+			@include smoothValue('width', 22px, 66px, $mobile, $desktop);
+			@include smoothValue('height', 22px, 66px, $mobile, $desktop);
+		}
+		&._smile-dollar {
+			@include smoothValue('width', 23px, 56px, $mobile, $desktop);
+			@include smoothValue('height', 23px, 56px, $mobile, $desktop);
+		}
+		&._euro {
+			@include smoothValue('width', 31px, 68px, $mobile, $desktop);
+			@include smoothValue('height', 18px, 68px, $mobile, $desktop);
+		}
+		&._ruble {
+			@include smoothValue('width', 34px, 74px, $mobile, $desktop);
+			@include smoothValue('height', 16px, 35px, $mobile, $desktop);
+		}
+		&._dollar {
+			@include smoothValue('width', 32px, 70px, $mobile, $desktop);
+			@include smoothValue('height', 15px, 32px, $mobile, $desktop);
+		}
+	}
+	&__step-text {
+		color: $c-dodger-blue;
+		line-height: 140%;
+		@include smoothValue('font-size', 16px, 36px, $mobile, $desktop);
+		@include max-screen($mobile-only-2) {
+			text-align: center;
+		}
+		&._1 {
+			margin-left: 69px;
+			max-width: 769px;
+			@include max-screen($mobile-only) {
+				margin-left: 35px;
+			}
+			@include max-screen($mobile-only-2) {
+				margin-left: 0;
+			}
+		}
+		&._2 {
+			margin-right: 55px;
+			max-width: 578px;
+			@include max-screen($mobile-only) {
+				margin-right: 22px;
+			}
+			@include max-screen($mobile-only-2) {
+				margin-right: 0;
+			}
+		}
+		&._3 {
+			margin-left: 137px;
+			max-width: 642px;
+			@include max-screen($mobile-only) {
+				margin-left: 68px;
+			}
+			@include max-screen($mobile-only-2) {
+				margin-left: 0;
+			}
+		}
+		&._4 {
+			margin-right: 58px;
+			@include max-screen($mobile-only) {
+				margin-right: 24px;
+			}
+			@include max-screen($mobile-only-2) {
+				margin-right: 0;
+			}
+		}
+	}
+	&__button {
+		margin: 0 auto;
+		min-width: calc(434 / 1370 * 100%);
+		@include max-screen($mobile-only-2) {
+			width: 100%;
+		}
+	}
+}

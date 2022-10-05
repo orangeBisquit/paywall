@@ -1,0 +1,136 @@
+.reviews {
+	$parent-selector: &;
+	@include smoothValue('padding-top', 60px, 125px, $mobile, $desktop);
+	@include smoothValue('padding-bottom', 60px, 114px, $mobile, $desktop);
+	&__carousel-wrapper {
+		width: 100%;
+	}
+	&__title {
+		margin-bottom: 58px;
+		@include max-screen($mobile-only-2) {
+			margin-bottom: 30px;
+		}
+	}
+	&__item {
+		background: $c-white;
+		border: 2px solid $c-alice-blue;
+		box-shadow: 0px 32px 29px -12px rgba(64, 153, 247, 0.08);
+		border-radius: 20px;
+		padding: 30px 29px 32px 30px;
+		max-width: 410px;
+		box-sizing: border-box;
+		cursor: pointer;
+		width: calc(410 / 1920 * 100%);
+		margin-right: calc(70 / 1920 * 100%);
+		min-height: 100%;
+		@include max-screen($desktop-2) {
+			width: 25%;
+			margin-right: calc(60 / 1600 * 100%);
+		}
+		@include max-screen($laptop-sm) {
+			width: 35%;
+			margin-right: calc(50 / 1280 * 100%);
+		}
+		@include max-screen($tablet) {
+			width: 42%;
+			margin-right: calc(40 / 960 * 100%);
+		}
+		@include max-screen($tablet-sm) {
+			min-width: 100%;
+			margin-right: 0;
+		}
+		@include max-screen($tablet-sm) {
+			min-width: auto;
+			max-width: none;
+			margin-right: 24px;
+			width: calc(100% - 24px * 2);
+		}
+	}
+	&__avatar-wrapper {
+		margin-bottom: 30px;
+	}
+	&__avatar-wrapper,
+	&__avatar-img {
+		border-radius: 50%;
+		@include smoothValue('width', 110px, 150px, $mobile, $desktop);
+		@include smoothValue('height', 110px, 150px, $mobile, $desktop);
+	}
+	&__item-name {
+		margin-bottom: 10px;
+		line-height: 115%;
+		font-size: 26px;
+	}
+	&__item-info {
+		margin-bottom: 22px;
+		line-height: 117%;
+		color: rgba($c-black, 0.5);
+		font-size: 18px;
+	}
+	&__item-text {
+		line-height: 140%;
+		color: $c-catalina-blue;
+		font-size: 16px;
+		& + p {
+			margin-top: 20px;
+		}
+	}
+	&__buttons-wrapper {
+		display: none;
+		justify-content: center;
+		margin: 0 auto;
+		column-gap: 30px;
+		margin-bottom: 30px;
+		@include max-screen($tablet-sm) {
+			display: flex;
+		}
+	}
+	&__button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: transparent;
+		border: 0;
+		padding: 0;
+		&:first-child {
+			transform: rotate(180deg);
+		}
+	}
+	&__arrow-icon {
+		width: 50px;
+		height: 50px;
+		fill: none;
+	}
+	// &__list {
+	// 	@include max-screen($tablet-sm) {
+	// 		// width: calc(327 / 375 * 100%);
+	// 		// max-width: 380px;
+	// 		// margin: 0 auto;
+	// 	}
+	// }
+	// .flickity-cell {
+	// 	position: absolute;
+	// 	width: calc(410 / 1920 * 100%);
+	// 	margin-right: calc(70 / 1920 * 100%);
+	// 	min-height: 100%;
+	// 	@include max-screen($desktop-2) {
+	// 		width: 25%;
+	// 		margin-right: calc(60 / 1600 * 100%);
+	// 	}
+	// 	@include max-screen($laptop-sm) {
+	// 		width: 35%;
+	// 		margin-right: calc(50 / 1280 * 100%);
+	// 	}
+	// 	@include max-screen($tablet) {
+	// 		width: 42%;
+	// 		margin-right: calc(40 / 960 * 100%);
+	// 	}
+	// 	@include max-screen($tablet-sm) {
+	// 		min-width: 100%;
+	// 		margin-right: 0;
+	// 	}
+	// }
+	// .flickity-viewport {
+	// 	width: 100%;
+	// 	overflow-x: hidden;
+	// }
+}

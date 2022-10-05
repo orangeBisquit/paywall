@@ -1,0 +1,15 @@
+{% macro support(props) %}
+	<div class="support {{ props.className }}">
+		<div class="support__container container">
+			<div class="support__inner">
+				<div class="support__left">
+					<h3 class="support__title title">Нужна помощь?</h3>
+					<p class="support__text">Пишите в поддержку, персональный менеджер поможет вам настроить бота. </p>
+				</div>
+				<div class="support__right">
+					<button class="support__button button _ghost" type="button">@paywallsupport</button>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endmacro %}

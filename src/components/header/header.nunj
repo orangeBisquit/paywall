@@ -1,0 +1,33 @@
+{% from "../lang-switch/lang-switch.nunj" import langSwitch %}
+
+<header class="header">
+	<div class="header__container container _full-width">
+		<div class="header__inner">
+			<a href="#hero" >
+				{{ icon({
+					iconName: 'logo',
+					className: 'header__logo-icon'
+			}) }}
+			</a>
+			{{ menu({
+					className: 'header__nav'
+			}) }}
+			<div class="header__buttons">
+				{{ langSwitch({
+						className: 'header__lang-switch',
+						iconClassName: 'header__lang-img',
+						langImg: 'flag-ru',
+						lang: 'ru',
+						langMobileImg: 'flag-ru-round'
+				}) }}
+				<button class="header__login-button button _sm _ghost" type="button">Войти</button>
+			</div>
+			<button class="header__burger" type="button" data-menu-modal-open>
+				{{ icon({
+					iconName: 'burger',
+					className: 'header__burger-icon'
+			}) }}
+			</button>
+		</div>
+	</div>
+</header>

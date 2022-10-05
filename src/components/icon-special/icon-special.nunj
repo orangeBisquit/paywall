@@ -1,0 +1,5 @@
+{% macro iconSpecial(props) %}
+	<div class="{{props.className}} icon-special">
+		<img class="{{props.iconClassName}} icon-special__img" src="../../assets/images/{{props.folder}}/{{props.name}}.png" width="{{props.width}}" height="{{props.height}}">
+	</div>
+{% endmacro %}

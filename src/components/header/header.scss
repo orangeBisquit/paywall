@@ -1,0 +1,124 @@
+.header {
+	$parent-selector: &;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	&._sticky {
+		z-index: 100;
+		margin: 0 auto;
+		#{$parent-selector} {
+			&__inner {
+				margin-top: 20px;
+				padding: 24px 44px;
+				background-color: $c-white;
+				box-shadow: 0px 11px 26px 5px rgba(64, 153, 247, 0.12);
+				border-radius: 100px;
+				@include smoothValue('padding', 30px, 44px, $laptop-sm-2, $desktop);
+				@include smoothValue('padding-top', 18px, 24px, $laptop-sm-2, $desktop);
+				@include smoothValue('padding-bottom', 18px, 24px, $laptop-sm-2, $desktop);
+				@include max-screen($laptop-sm-2) {
+					margin: 0;
+					border-radius: 0;
+				}
+			}
+			&__container {
+				@include max-screen($laptop-sm-2) {
+					padding: 0;
+				}
+			}
+		}
+	}
+	&__burger {
+		display: none;
+		padding: 0;
+		border: 0;
+		width: 30px;
+		height: 24px;
+		margin-left: 20px;
+		background-color: transparent;
+		@include max-screen($laptop-sm-2) {
+			display: block;
+		}
+	}
+	&__burger-icon {
+		width: 30px;
+		height: 24px;
+	}
+	&__logo-icon {
+		display: block;
+		margin-top: 6px;
+		width: 204px;
+		height: 50px;
+		@include max-screen($desktop-2) {
+			width: 160px;
+			height: 40px;
+		}
+		@include max-screen($laptop-sm-2) {
+			width: 142px;
+			height: 35px;
+			margin-top: 4px;
+			margin-right: auto;
+		}
+	}
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		padding-top: 35px;
+		@include max-screen($laptop-sm-2) {
+			padding-top: 24px;
+			align-items: center;
+		}
+		@include max-screen($mobile) {
+			padding-top: 13px;
+		}
+	}
+	&__buttons {
+		display: flex;
+		align-items: center;
+		column-gap: 30px;
+		@include max-screen($desktop-2) {
+			column-gap: 20px;
+		}
+		@include max-screen($laptop-sm-2) {
+			margin-left: auto;
+		}
+	}
+	&__lang-switch {
+		background-color: transparent;
+		border: 0;
+		padding: 0;
+		width: 87px;
+		height: 50px;
+		cursor: pointer;
+		@include max-screen($desktop-2) {
+			width: 74px;
+			height: 40px;
+		}
+		@include max-screen($laptop-sm-2) {
+			width: 22px;
+			height: 22px;
+			border-radius: 50%;
+		}
+	}
+	&__login-button {
+		@include max-screen($laptop-sm-2) {
+			display: none;
+		}
+	}
+	&__lang-img {
+		width: auto;
+		height: 100%;
+	}
+	&__nav {
+		display: flex;
+		position: relative;
+		left: -36px;
+		@include max-screen($desktop-2) {
+			left: 0;
+		}
+		@include max-screen($laptop-sm-2) {
+			display: none;
+		}
+	}
+}

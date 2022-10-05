@@ -1,0 +1,48 @@
+$default-font-family: 'GT Eesti Pro Display', Arial, sans-serif;
+
+$default-transition-duration: 0.15s;
+$default-transition-function: ease-out;
+
+$long-transition-duration: 0.3s;
+$long-transition-function: ease;
+
+$fast-transition-duration: 0.1s;
+$in-transition-function: ease-in;
+
+$desktop: 1920px;
+$desktop-2: 1600px;
+$laptop: 1366px;
+$laptop-sm: 1280px;
+$laptop-sm-2: 1024px;
+$tablet: 960px;
+$tablet-sm: 768px;
+$mobile-only: 767px;
+$mobile-only-2: 600px;
+$mobile: 480px;
+$mobile-md: 374px;
+$mobile-sm: 320px;
+
+// 1370 + 55 + 55
+$container: 1480px;
+
+$c-black: #000;
+$c-white: #fff;
+
+$c-dodger-blue: #4099f7;
+$c-dodger-blue-2: #2b8be8;
+$c-pale-cornflower-blue: #b7dcff;
+$c-catalina-blue: #263f5a;
+$c-kournikova: #f8cd46;
+$c-amber: #ffc100;
+$c-alice-blue: #edf5fd;
+$c-heather: #a6b2bf;
+$c-panache: #f5fded;
+$c-pink-swan: #b2b2b2;
+$c-free-speech-red: #d80d0d;
+$c-denim: #1a60a3;
+$c-gold-tips: #dfb11f;
+$c-dark-goldenrod: #ae880f;
+$c-grey-chateau: #939fad;
+
+$default-gradient: linear-gradient(180deg, #ebf4fd 0%, rgba(255, 255, 255, 0) 100%);
+$default-box-shadow: 0px 11px 26px 5px rgba(64, 153, 247, 0.12);

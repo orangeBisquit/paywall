@@ -1,0 +1,133 @@
+<section id="telegram" class="telegram">
+	<div class="telegram__container container _lg">
+		<h3 class="telegram__title title">Почему Telegram?</h3>
+		<p class="telegram__text">Потому что он идеален для создателей контента</p>
+		<ul class="telegram__list">
+			<li class="telegram__item _dashed" data-auto-show="default">
+				{{ icon({
+						iconName: 'card-1',
+						className: 'telegram__item-icon'
+				}) }}
+				<p class="telegram__item-text">API для разработчиков</p>
+			</li>
+			<li class="telegram__item _shadow" data-auto-show="default">
+				{{ icon({
+						iconName: 'card-2',
+						className: 'telegram__item-icon'
+				}) }}
+				<p class="telegram__item-text">Анимированные эмоджи и стикеры</p>
+			<li class="telegram__item _blue" data-auto-show="default">
+				{{ icon({
+						iconName: 'card-3',
+						className: 'telegram__item-icon'
+				}) }}
+				<p class="telegram__item-text">Комментарии к&nbsp;постам</p>
+			</li>
+			<li class="telegram__item _shadow" data-auto-show="default">
+				{{ icon({
+						iconName: 'card-4',
+						className: 'telegram__item-icon'
+				}) }}
+				<p class="telegram__item-text">Видео-аватары</p>
+			</li>
+			<li class="telegram__item _dashed" data-auto-show="default">
+				{{ icon({
+						iconName: 'card-5',
+						className: 'telegram__item-icon'
+				}) }}
+				<p class="telegram__item-text">Фото</p>
+			</li>
+			<li class="telegram__item _shadow" data-auto-show="default">
+				{{ icon({
+						iconName: 'card-6',
+						className: 'telegram__item-icon'
+				}) }}
+				<p class="telegram__item-text">Аудио</p>
+			</li>
+			<li class="telegram__item _blue" data-auto-show="default">
+				{{ icon({
+						iconName: 'card-7',
+						className: 'telegram__item-icon'
+				}) }}
+				<p class="telegram__item-text">Боты для решения любых задач</p>
+			</li>
+			<li class="telegram__item _shadow" data-auto-show="default">
+				{{ icon({
+						iconName: 'card-8',
+						className: 'telegram__item-icon'
+				}) }}
+				<p class="telegram__item-text">Видео</p>
+			</li>
+			<li class="telegram__item _dashed" data-auto-show="default">
+				{{ icon({
+						iconName: 'card-9',
+						className: 'telegram__item-icon'
+				}) }}
+				<p class="telegram__item-text">Клиенты для всех устройств</p>
+			</li>
+			<li class="telegram__item _shadow" data-auto-show="default">
+				{{ icon({
+						iconName: 'card-10',
+						className: 'telegram__item-icon'
+				}) }}
+				<p class="telegram__item-text">Сотни миллионов пользователей</p>
+			</li>
+			<li class="telegram__item _blue" data-auto-show="default">
+				{{ icon({
+						iconName: 'card-11',
+						className: 'telegram__item-icon'
+				}) }}
+				<p class="telegram__item-text">Запланированные посты</p>
+			</li>
+			<li class="telegram__item _shadow" data-auto-show="default">
+				{{ icon({
+						iconName: 'card-12',
+						className: 'telegram__item-icon'
+				}) }}
+				<p class="telegram__item-text">Можно делать свои стикеры</p>
+			</li>
+			<li class="telegram__item _dashed" data-auto-show="default">
+				{{ icon({
+						iconName: 'card-13',
+						className: 'telegram__item-icon'
+				}) }}
+				<p class="telegram__item-text">Редактор фото и видео</p>
+			</li>
+			<li class="telegram__item _shadow" data-auto-show="default">
+				{{ icon({
+						iconName: 'card-14',
+						className: 'telegram__item-icon'
+				}) }}
+				<p class="telegram__item-text">Анонимные администраторы</p>
+			</li>
+			<li class="telegram__item _blue" data-auto-show="default">
+				{{ icon({
+						iconName: 'card-15',
+						className: 'telegram__item-icon'
+				}) }}
+				<p class="telegram__item-text">Гифки</p>
+			</li>
+			<li class="telegram__item _blue" data-auto-show="default">
+				{{ icon({
+						iconName: 'card-16',
+						className: 'telegram__item-icon'
+				}) }}
+				<p class="telegram__item-text">Лучший интерфейс</p>
+			</li>
+			<li class="telegram__item _dashed" data-auto-show="default">
+				{{ icon({
+						iconName: 'card-17',
+						className: 'telegram__item-icon'
+				}) }}
+				<p class="telegram__item-text">Приватность</p>
+			</li>
+			<li class="telegram__item _shadow" data-auto-show="default">
+				{{ icon({
+						iconName: 'card-18',
+						className: 'telegram__item-icon'
+				}) }}
+				<p class="telegram__item-text">Опросы</p>
+			</li>
+		</ul>
+	</div>
+</section>

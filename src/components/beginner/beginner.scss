@@ -1,0 +1,65 @@
+.beginner {
+	background-color: $c-dodger-blue;
+	@include smoothValue('padding-top', 60px, 130px, $mobile, $desktop);
+	@include smoothValue('padding-bottom', 60px, 130px, $mobile, $desktop);
+	&__title {
+		margin-bottom: 61px;
+		@include max-screen($mobile) {
+			width: 100%;
+			padding-right: 0;
+			margin-bottom: 30px;
+		}
+	}
+	&__cards-list {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: calc(38 / 1370 * 100%);
+		margin-bottom: 49px;
+		@include max-screen($mobile-only) {
+			grid-template-columns: repeat(1, 1fr);
+			row-gap: 30px;
+			margin-bottom: 30px;
+		}
+	}
+	&__card {
+		border-radius: 18px;
+		border: 1px solid $c-white;
+		overflow: hidden;
+	}
+	&__card-top {
+		position: relative;
+		background-color: $c-white;
+		padding-top: calc(285 / 431 * 100%);
+		@include max-screen($mobile-only) {
+			padding-top: 242px;
+		}
+	}
+	&__emoji-icon {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		height: auto;
+		transform: translate(-50%, -50%);
+		@include smoothValue('width', 89px, 197px, $tablet-sm, $desktop);
+		@include max-screen($mobile-only) {
+			width: 148px;
+		}
+	}
+	&__text {
+		padding: 24px 10px 32px 24px;
+		line-height: 140%;
+		color: $c-white;
+		@include smoothValue('font-size', 16px, 26px, $mobile, $desktop);
+		@include max-screen($mobile) {
+			padding-bottom: 20px;
+		}
+	}
+	&__button {
+		display: block;
+		margin: 0 auto;
+		min-width: 32.5%;
+		@include max-screen($mobile-only) {
+			width: 100%;
+		}
+	}
+}

@@ -1,0 +1,58 @@
+<section id="payments" class="payments">
+	<div class="payments__wrapper">
+		<div class="payments__container container">
+			<div class="payments__inner">
+				<div class="payments__bills-wrapper">
+					<div class="payments__bill-item _ruble-1" data-auto-show="default">
+						{{ icon({
+								iconName: 'ruble-1',
+								className: 'payments__bill-img'
+						}) }}
+					</div>
+					<div class="payments__bill-item _ruble-2" data-auto-show="default">
+						{{ icon({
+								iconName: 'ruble-2',
+								className: 'payments__bill-img'
+						}) }}
+					</div>
+					<div class="payments__bill-item _dollar" data-auto-show="default">
+						{{ icon({
+								iconName: 'dollar',
+								className: 'payments__bill-img'
+						}) }}
+					</div>
+					<div class="payments__bill-item _euro" data-auto-show="default">
+						{{ icon({
+								iconName: 'euro',
+								className: 'payments__bill-img _euro'
+						}) }}
+					</div>
+				</div>
+				<div class="payments__grid">
+					<div class="payments__content-left">
+						<div class="payments__text-spaced-wrapper">
+							<p class="payments__text-spaced _left">Рекуррентные</p>
+							{{ icon({
+									iconName: 'arrow-medium',
+									className: 'payments__text-spaced-arrow'
+							}) }}
+							{{ icon({
+									iconName: 'arrow-medium-down',
+									className: 'payments__text-spaced-arrow-down'
+							}) }}
+						</div>
+					</div>
+					<div class="payments__content-right">
+						<p class="payments__text-accent">
+							<span>автоматические&nbsp;</span><br>
+							платежи по&nbsp;подпискам
+						</p>
+						<p class="payments__text-spaced _right">повышают <span class="desktop">ваш</span> доход</p>
+						<p class="payments__text">Вам не&nbsp;нужно напоминать об&nbsp;оплате и&nbsp;следить за&nbsp;сроками платежей. Никаких хлопот&nbsp;&mdash; в&nbsp;назначенный срок деньги у&nbsp;подписчиков спишутся сами.</p>
+						<button class="payments__button-start button _special">Начать зарабатывать</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

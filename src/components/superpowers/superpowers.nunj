@@ -1,0 +1,89 @@
+<section id="superpowers" class="superpowers">
+	<div class="superpowers__container container">
+		<h2 class="superpowers__title title">Суперспособности Paywall</h2>
+		<div class="superpowers__list-wrapper">
+			<ul class="superpowers__list">
+				<li class="superpowers__item">
+					<div class="superpowers__item-icon-wrapper">
+						{{ icon({
+								iconName: 'superpowers-1',
+								className: 'superpowers__item-icon'
+						}) }}
+					</div>
+					<p class="superpowers__item-title">Несколько каналов</p>
+					<p class="superpowers__item-text _1">Вы&nbsp;можете добавить несколько каналов и&nbsp;чатов в&nbsp;один проект</p>
+				</li>
+				<li class="superpowers__item">
+					<div class="superpowers__item-icon-wrapper">
+						{{ icon({
+								iconName: 'superpowers-2',
+								className: 'superpowers__item-icon'
+						}) }}
+					</div>
+					<p class="superpowers__item-title">Автоматизация</p>
+					<p class="superpowers__item-text">Мы&nbsp;делаем за&nbsp;вас всю рутинную работу, а&nbsp;вы&nbsp;фокусируетесь на&nbsp;создании контента</p>
+				</li>
+				<li class="superpowers__item">
+					<div class="superpowers__item-icon-wrapper">
+						{{ icon({
+								iconName: 'superpowers-3',
+								className: 'superpowers__item-icon'
+						}) }}
+					</div>
+					<p class="superpowers__item-title">Гибкие тарифы</p>
+					<p class="superpowers__item-text">Вы&nbsp;решаете, сколько платят подписчики и&nbsp;как часто списываются деньги</p>
+				</li>
+				<li class="superpowers__item">
+					<div class="superpowers__item-icon-wrapper">
+						{{ icon({
+								iconName: 'superpowers-4',
+								className: 'superpowers__item-icon'
+						}) }}
+					</div>
+					<p class="superpowers__item-title">По всему миру</p>
+					<p class="superpowers__item-text">Продавайте контент пользователям со&nbsp;всего мира</p>
+				</li>
+				<li class="superpowers__item">
+					<div class="superpowers__item-icon-wrapper">
+						{{ icon({
+								iconName: 'superpowers-5',
+								className: 'superpowers__item-icon'
+						}) }}
+					</div>
+					<p class="superpowers__item-title">Статистика</p>
+					<p class="superpowers__item-text">Анализируйте конверсию и&nbsp;привлекайте больше подписчиков</p>
+				</li>
+				<li class="superpowers__item">
+					<div class="superpowers__item-icon-wrapper">
+						{{ icon({
+								iconName: 'superpowers-6',
+								className: 'superpowers__item-icon'
+						}) }}
+					</div>
+					<p class="superpowers__item-title">Удобный вывод</p>
+					<p class="superpowers__item-text _mobile-sm">Выплаты физ. лицам и&nbsp;юр. лицам</p>
+				</li>
+				<li class="superpowers__item">
+					<div class="superpowers__item-icon-wrapper">
+						{{ icon({
+								iconName: 'superpowers-7',
+								className: 'superpowers__item-icon'
+						}) }}
+					</div>
+					<p class="superpowers__item-title">Прозрачные условия</p>
+					<p class="superpowers__item-text _sm">Вы&nbsp;получаете&nbsp;80% от&nbsp;стоимости подписки. Без скрытых платежей</p>
+				</li>
+				<li class="superpowers__item">
+					<div class="superpowers__item-icon-wrapper">
+						{{ icon({
+								iconName: 'superpowers-8',
+								className: 'superpowers__item-icon'
+						}) }}
+					</div>
+					<p class="superpowers__item-title">UTM-метки</p>
+					<p class="superpowers__item-text">Следите за&nbsp;ROI ваших рекламных кампаний</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>

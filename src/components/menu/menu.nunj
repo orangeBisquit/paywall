@@ -1,0 +1,17 @@
+{% from "../../components/icon/icon.nunj" import icon %}
+
+{% macro menu(props) %}
+	<nav class="{{ props.className }} menu">
+		<button class="menu__item link" aria-label="Открыть меню описания сервиса" type="button" data-menu-modal-open>
+			Что за сервис
+			{{ icon({
+					iconName: 'arrow-down',
+					className: 'menu__arrow-icon'
+			}) }}
+		</button>
+		<a href="#" class="menu__item link">Помощь</a>
+		<a href="#" class="menu__item link">FAQ</a>
+		<a href="#" class="menu__item link">Для подписчиков</a>
+		<a href="#" class="menu__item link">Блог</a>
+	</nav>
+{% endmacro %}

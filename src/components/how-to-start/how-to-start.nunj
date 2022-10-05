@@ -1,0 +1,107 @@
+<section id="how-to-start" class="how-to-start">
+	<div class="how-to-start__container container">
+		<div class="how-to-start__inner">
+			<h3 class="how-to-start__title title">Готовы зарабатывать на эксклюзивном контенте? Начать&nbsp;очень&nbsp;просто!</h3>
+			<p class="how-to-start__disclaimer">
+				{{ icon({
+					iconName: 'clock',
+					className: 'how-to-start__disclaimer-icon'
+				}) }}
+			Настройка займет не больше 5 минут</p>
+
+			<ol class="how-to-start__steps-list">
+				<li class="how-to-start__steps-item _1">
+					<div class="how-to-start__step-number-wrapper _1">
+						<p class="how-to-start__step-number">1</p>
+						<div class="how-to-start__step-icon-wrapper _mic" data-auto-show="scale">
+							{{ icon({
+								iconName: 'mic',
+								className: 'how-to-start__step-icon _mic'
+						}) }}
+						</div>
+						<div class="how-to-start__step-icon-wrapper _strawberry" data-auto-show="scale">
+							{{ icon({
+								iconName: 'strawberry',
+								className: 'how-to-start__step-icon _strawberry'
+						}) }}
+						</div>
+						<div class="how-to-start__step-icon-wrapper _cap" data-auto-show="scale">
+							{{ icon({
+								iconName: 'cap',
+								className: 'how-to-start__step-icon _cap'
+						}) }}
+						</div>
+					</div>
+					<p class="how-to-start__step-text _1">Создайте приватный телеграм-канал, подключите Paywall и&nbsp;выберите стоимость подписки</p>
+				</li>
+				<li class="how-to-start__steps-item _2">
+					<p class="how-to-start__step-text _2">Пригласите аудиторию в закрытый канал — технические вопросы мы берем на себя</p>
+					<div class="how-to-start__step-number-wrapper _2">
+						<p class="how-to-start__step-number">2</p>
+						<div class="how-to-start__step-icon-wrapper _kiss" data-auto-show="scale">
+							{{ icon({
+								iconName: 'smile-kiss',
+								className: 'how-to-start__step-icon _kiss'
+						}) }}
+						</div>
+						<div class="how-to-start__step-icon-wrapper _happy" data-auto-show="scale">
+							{{ icon({
+								iconName: 'smile-happy',
+								className: 'how-to-start__step-icon _happy'
+						}) }}
+						</div>
+						<div class="how-to-start__step-icon-wrapper _love" data-auto-show="scale">
+							{{ icon({
+								iconName: 'smile-love',
+								className: 'how-to-start__step-icon _love'
+						}) }}
+						</div>
+					</div>
+				</li>
+				<li class="how-to-start__steps-item _3">
+					<div class="how-to-start__step-number-wrapper _3">
+						<p class="how-to-start__step-number">3</p>
+						<div class="how-to-start__step-icon-wrapper _fire" data-auto-show="scale">
+							{{ icon({
+								iconName: 'fire',
+								className: 'how-to-start__step-icon _fire'
+						}) }}
+						</div>
+						<div class="how-to-start__step-icon-wrapper _smile-dollar" data-auto-show="scale">
+							{{ icon({
+								iconName: 'smile-dollar',
+								className: 'how-to-start__step-icon _smile-dollar'
+						}) }}
+						</div>
+					</div>
+					<p class="how-to-start__step-text _3">Смотрите статистику, анализируйте результаты и улучшайте свой контент</p>
+				</li>
+				<li class="how-to-start__steps-item _4">
+					<p class="how-to-start__step-text _4">Выводите деньги!</p>
+					<div class="how-to-start__step-number-wrapper _4">
+						<p class="how-to-start__step-number">4</p>
+						<div class="how-to-start__step-icon-wrapper _euro" data-auto-show="scale">
+							{{ icon({
+								iconName: 'euro',
+								className: 'how-to-start__step-icon _euro'
+						}) }}
+						</div>
+						<div class="how-to-start__step-icon-wrapper _ruble" data-auto-show="scale">
+							{{ icon({
+								iconName: 'ruble-2',
+								className: 'how-to-start__step-icon _ruble'
+						}) }}
+						</div>
+						<div class="how-to-start__step-icon-wrapper _dollar" data-auto-show="scale">
+							{{ icon({
+								iconName: 'dollar',
+								className: 'how-to-start__step-icon _dollar'
+						}) }}
+						</div>
+					</div>
+				</li>
+			</ol>
+			<button class="how-to-start__button button _special">Подключить Paywall</button>
+		</div>
+	</div>
+</section>

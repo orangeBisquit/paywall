@@ -1,0 +1,246 @@
+.payments {
+	color: $c-white;
+	background-color: $c-dodger-blue;
+	&__wrapper {
+		@include smoothValue('padding-top', 60px, 130px, $mobile, $desktop);
+		@include smoothValue('padding-bottom', 60px, 130px, $mobile-only, $desktop);
+		@include max-screen($mobile) {
+			padding-top: 0;
+			background-color: $c-white;
+		}
+	}
+	&__inner {
+		position: relative;
+		box-sizing: border-box;
+		border: 2px solid $c-white;
+		border-radius: 20px;
+		background-image: inline('payments-semi-circle.svg');
+		background-size: 46.5%;
+		background-position: 7% 100%;
+		background-repeat: no-repeat;
+		@include smoothValue('padding-top', 22px, 60px, $mobile, $desktop);
+		@include smoothValue('padding-bottom', 40px, 78px, $laptop-sm-2, $desktop);
+		@include smoothValue('padding-right', 24px, 68px, $mobile, $desktop);
+		@include smoothValue('padding-left', 24px, 60px, $mobile, $desktop);
+		@include max-screen($laptop-sm-2) {
+			background-position: 50% 105%;
+			@include smoothValue('padding-bottom', 200px, 300px, $mobile, $laptop-sm-2);
+			@include smoothValue('background-size', 285px, 420px, $mobile, $laptop-sm-2);
+		}
+		@include max-screen($mobile) {
+			background-color: $c-dodger-blue;
+			border: 0;
+			border-radius: 14px;
+		}
+	}
+	&__semicircle-img {
+		position: absolute;
+		bottom: 0;
+		left: 3.5%;
+
+		@include smoothValue('width', 400px, 636px, $laptop-sm-2, $desktop);
+		@include smoothValue('height', 220px, 328px, $laptop-sm-2, $desktop);
+		@include max-screen($laptop-sm-2) {
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+	&__grid {
+		display: flex;
+		width: 100%;
+		@include max-screen($laptop-sm-2) {
+			flex-direction: column;
+			text-align: center;
+		}
+	}
+	&__content-left {
+		position: relative;
+		box-sizing: border-box;
+		width: 46.4%;
+		flex-shrink: 0;
+		@include max-screen($laptop-sm-2) {
+			width: 100%;
+			@include smoothValue('padding-bottom', 39px, 60px, 375px, $laptop-sm-2);
+		}
+	}
+	&__content-right {
+		box-sizing: border-box;
+		width: 54.3%;
+		padding-left: 3px;
+		@include smoothValue('padding-top', 14px, 23px, $laptop-sm-2, $desktop);
+		@include max-screen($laptop-sm-2) {
+			width: 100%;
+			padding-top: 0;
+		}
+	}
+	&__text-spaced-wrapper {
+		position: relative;
+	}
+	&__text-spaced-arrow {
+		position: absolute;
+		top: 50%;
+		right: 19px;
+		width: 71px;
+		height: 30px;
+		transform: translateY(-50%);
+		@include smoothValue('width', 40px, 71px, $laptop-sm-2, $desktop);
+		@include smoothValue('height', 17px, 30px, $laptop-sm-2, $desktop);
+		@include max-screen($laptop-sm-2) {
+			display: none;
+		}
+	}
+	&__text-spaced-arrow-down {
+		display: none;
+		@include max-screen($laptop-sm-2) {
+			display: block;
+			position: absolute;
+			bottom: -60px;
+			left: 50%;
+			transform: translateX(-50%);
+			@include smoothValue('width', 16px, 24px, $mobile, $laptop-sm-2);
+			@include smoothValue('height', 30px, 45px, $mobile, $laptop-sm-2);
+		}
+		@include max-screen(720px) {
+			bottom: -53px;
+		}
+		@include max-screen($mobile) {
+			bottom: -40px;
+		}
+	}
+	&__text-spaced {
+		padding-right: 10px;
+		padding-left: 10px;
+		border-radius: 20px;
+		font-weight: 700;
+		font-size: 55px;
+		line-height: 100%;
+		text-align: center;
+		letter-spacing: 0.03em;
+		background-color: rgba($c-alice-blue, 0.25);
+		@include smoothValue('padding-top', 14px, 30px, $mobile, $desktop);
+		@include smoothValue('padding-bottom', 18px, 32px, $mobile, $desktop);
+		@include smoothValue('font-size', 32px, 55px, $mobile, $desktop);
+		&._left {
+			@include smoothValue('margin-right', 80px, 109px, $laptop-sm-2, $desktop);
+			@include max-screen($laptop-sm-2) {
+				margin-right: 0;
+			}
+		}
+		&._right {
+			padding-left: 15px;
+			@include smoothValue('padding-top', 13px, 28px, $mobile, $desktop);
+			@include smoothValue('padding-bottom', 13px, 32px, $mobile, $desktop);
+			@include smoothValue('margin-bottom', 20px, 33px, $mobile, $desktop);
+		}
+		.desktop {
+			@include max-screen($mobile) {
+				display: none;
+			}
+		}
+	}
+	&__text-accent {
+		font-weight: 700;
+		font-size: 55px;
+		line-height: 100%;
+		letter-spacing: 0.03em;
+		@include smoothValue('margin-bottom', 20px, 45px, $mobile, $desktop);
+		@include smoothValue('font-size', 32px, 55px, $mobile, $desktop);
+		span {
+			line-height: 115%;
+			display: inline-block;
+			border-bottom: 4px dashed $c-white;
+			margin-bottom: 8px;
+			@include max-screen($mobile) {
+				margin-bottom: 11px;
+				line-height: 44px;
+			}
+		}
+	}
+	&__text {
+		margin-right: -10px;
+		line-height: 140%;
+		letter-spacing: 0.03em;
+		@include smoothValue('margin-bottom', 30px, 50px, $mobile, $desktop);
+		@include smoothValue('font-size', 16px, 26px, $mobile, $desktop);
+		span {
+			white-space: nowrap;
+		}
+		@include max-screen($mobile) {
+			line-height: 130%;
+			margin-right: 0;
+		}
+	}
+	&__bill-item {
+		display: flex;
+		position: absolute;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		background-color: $c-white;
+		box-shadow: 0px 12.6777px 35.2159px -16.9037px rgba(64, 153, 247, 0.3);
+		@include smoothValue('width', 100px, 124px, $laptop-sm-2, $desktop);
+		@include smoothValue('height', 100px, 124px, $laptop-sm-2, $desktop);
+		@include max-screen($laptop-sm-2) {
+			@include smoothValue('width', 45px, 100px, $mobile, $laptop-sm-2);
+			@include smoothValue('height', 45px, 100px, $mobile, $laptop-sm-2);
+		}
+		&._ruble-1 {
+			bottom: 30.8%;
+			left: 7.3%;
+			@include max-screen($laptop-sm-2) {
+				bottom: 10.3%;
+				left: 25.3%;
+			}
+		}
+		&._ruble-2 {
+			bottom: 33.8%;
+			left: 19.5%;
+			@include max-screen($laptop-sm-2) {
+				bottom: 11.4%;
+				left: 44.5%;
+			}
+		}
+		&._dollar {
+			bottom: 51.4%;
+			left: 24.7%;
+			@include max-screen($laptop-sm-2) {
+				bottom: 21.5%;
+				left: 54.7%;
+			}
+			@include max-screen($tablet-sm) {
+				bottom: 17.5%;
+				left: 52.7%;
+			}
+		}
+		&._euro {
+			bottom: 14.5%;
+			left: 29.3%;
+			@include max-screen($laptop-sm-2) {
+				bottom: 4.2%;
+				left: 59.6%;
+			}
+		}
+	}
+	&__bill-img {
+		@include smoothValue('width', 70px, 94px, $mobile, $desktop);
+		@include smoothValue('height', 45px, 51px, $mobile, $desktop);
+		@include max-screen($laptop-sm-2) {
+			@include smoothValue('width', 34px, 75px, $mobile, $laptop-sm-2);
+			@include smoothValue('height', 18px, 39px, $mobile, $laptop-sm-2);
+		}
+		&._euro {
+			@include smoothValue('width', 69px, 90px, $mobile, $desktop);
+			@include smoothValue('height', 48px, 60px, $mobile, $desktop);
+			@include max-screen($laptop-sm-2) {
+				@include smoothValue('width', 33px, 72px, $mobile, $laptop-sm-2);
+				@include smoothValue('height', 19px, 41px, $mobile, $laptop-sm-2);
+			}
+		}
+	}
+	&__button-start {
+		min-width: 66.8%;
+		@include max-screen($mobile) {
+			width: 100%;
+		}
+	}
+}

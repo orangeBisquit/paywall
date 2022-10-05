@@ -1,0 +1,29 @@
+{% extends "../ext/base.nunj" %}
+
+{% from "../../components/menu/menu.nunj" import menu %}
+{% from "../../components/button/button.nunj" import button %}
+{% from "../../components/icon/icon.nunj" import icon %}
+
+{# Пример расширения существующего блока #}
+{# Например можно использовать для добавления уникальных тайтлов для каждой страницы #}
+{# {% block title %}Home / {{ super() }}{% endblock title %} #}
+
+{% block content %}
+	{% include '../../components/hero/hero.nunj' %}
+	{% include '../../components/animations/animations.nunj' %}
+	{% include '../../components/how-it-works/how-it-works.nunj' %}
+	{% include '../../components/superpowers/superpowers.nunj' %}
+	{% include '../../components/payments/payments.nunj' %}
+	{% include '../../components/calculator/calculator.nunj' %}
+	{% include '../../components/world/world.nunj' %}
+	{% include '../../components/how-to-start/how-to-start.nunj' %}
+	{% include '../../components/help/help.nunj' %}
+	{% include '../../components/reviews/reviews.nunj' %}
+	{% include '../../components/telegram/telegram.nunj' %}
+	{% include '../../components/model/model.nunj' %}
+	{% include '../../components/beginner/beginner.nunj' %}
+	{% include '../../components/footer/footer.nunj' %}
+	{% include '../../components/menu-modal/menu-modal.nunj' %}
+	{% include '../../components/mailing/mailing.nunj' %}
+	{% include '../../components/cookie/cookie.nunj' %}
+{% endblock content %}

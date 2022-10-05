@@ -1,0 +1,70 @@
+{% from "../support/support.nunj" import support %}
+{% from "../lang-switch/lang-switch.nunj" import langSwitch %}
+
+<footer class="footer">
+	{{ support({
+			className: 'footer__support'
+	}) }}
+	<div class="footer__container container">
+		<div class="footer__top-menu">
+			<div class="footer__icons">
+				{{ icon({
+						iconName: 'logo',
+						className: 'footer__logo'
+				}) }}
+				<div class="footer__payment-methods">
+					{{ icon({
+							iconName: 'visa',
+							className: 'footer__payment-icon _visa'
+					}) }}
+					{{ icon({
+							iconName: 'mastercard',
+							className: 'footer__payment-icon _mastercard'
+					}) }}
+					{{ icon({
+							iconName: 'mir',
+							className: 'footer__payment-icon _mir'
+					}) }}
+				</div>
+			</div>
+			{{ menu({
+					className: 'footer__nav'
+			}) }}
+			<div class="footer__buttons-wrapper">
+				{{ langSwitch({
+						className: 'footer__lang-switch _sm',
+						iconClassName: 'footer__lang-img',
+						langImg: 'flag-brit',
+						lang: 'en'
+				}) }}
+				<button class="footer__button-telegram button _ghost">
+					{{ icon({
+							iconName: 'telegram',
+							className: 'footer__button-telegram-icon'
+					}) }}
+					Telegram
+					</button>
+			</div>
+		</div>
+		<ul class="footer__bottom-menu-list">
+			<li class="footer__bottom-menu-item">
+				<a href="#" class="footer__bottom-menu-link">© Paywall.pw <span class="footer__current-year" data-current-year>2020</span></a>
+			</li>
+			<li class="footer__bottom-menu-item">
+				<a href="#" class="footer__bottom-menu-link">Правила пользования</a>
+			</li>
+			<li class="footer__bottom-menu-item">
+				<a href="#" class="footer__bottom-menu-link">Политика обработки персональных&nbsp;данных</a>
+			</li>
+			<li class="footer__bottom-menu-item">
+				<a href="#" class="footer__bottom-menu-link">Согласие на подписку</a>
+			</li>
+			<li class="footer__bottom-menu-item">
+				<a href="#" class="footer__bottom-menu-link">Гарантии безопасности и порядок&nbsp;оплаты</a>
+			</li>
+			<li class="footer__bottom-menu-item">
+				<a href="#" class="footer__bottom-menu-link">Aгентский договор</a>
+			</li>
+		</ul>
+	</div>
+</footer>

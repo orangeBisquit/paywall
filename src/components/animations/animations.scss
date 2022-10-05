@@ -1,0 +1,465 @@
+.animations {
+	&__inner {
+		padding-bottom: calc(224 / 1920 * 100%);
+		@include max-screen($mobile-only) {
+			padding-bottom: 0;
+		}
+	}
+	&__blue-wrapper {
+		position: relative;
+		background-color: $c-dodger-blue;
+		@include max-screen($mobile-only) {
+			background: transparent;
+		}
+	}
+	&__container {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		@include max-screen($mobile-only) {
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+	}
+	&__header {
+		display: none;
+		margin-bottom: 60px;
+		font-weight: 700;
+		line-height: 70px;
+		letter-spacing: 0.03em;
+		text-align: center;
+		color: $c-white;
+		@include fluid-font($mobile, $desktop, 28px, 60px);
+		@include max-screen($mobile-only) {
+			display: block;
+			margin-bottom: 22px;
+			line-height: 34px;
+			color: $c-catalina-blue;
+		}
+	}
+	&__frame {
+		position: relative;
+		border: 1px solid $c-white;
+		border-radius: 20px;
+		@include max-screen($mobile-only) {
+			background-color: $c-dodger-blue;
+			border: none;
+			border-radius: 14px;
+		}
+	}
+	&__tab {
+		display: none;
+		visibility: visible;
+		position: relative;
+		flex-direction: column;
+		position: relative;
+		padding-top: 60px;
+		padding-left: 60px;
+		padding-right: calc(653 / 1480 * 100%);
+		opacity: 0;
+		&._temp {
+			display: flex;
+			visibility: hidden;
+			position: absolute;
+		}
+		&._active {
+			display: flex;
+		}
+		&._visible {
+			opacity: 1;
+		}
+		@include max-screen($mobile-only) {
+			padding-top: 26px;
+			padding-right: 26px;
+			padding-left: 26px;
+		}
+	}
+	&__title {
+		margin-bottom: 34px;
+		font-weight: 700;
+		letter-spacing: 0.03em;
+		color: $c-white;
+		@include fluid-font($mobile, $desktop, 28px, 60px);
+		@include smoothValue('line-height', 121%, 103%, $mobile, $desktop);
+		@include max-screen($mobile-only) {
+			margin-bottom: 12px;
+		}
+		&._tab-2 {
+			margin-bottom: 30px;
+			@include max-screen($mobile-only) {
+				margin-bottom: 12px;
+			}
+		}
+		&._tab-4 {
+			margin-bottom: 41px;
+			@include max-screen($mobile-only) {
+				margin-bottom: 12px;
+			}
+		}
+		&._tab-5 {
+			margin-bottom: 21px;
+			@include max-screen($mobile-only) {
+				margin-bottom: 12px;
+			}
+		}
+	}
+	&__accent-text {
+		border-radius: 20px;
+		color: $c-dodger-blue;
+		font-weight: 400;
+		font-size: 36px;
+		line-height: 100%;
+		letter-spacing: 0.03em;
+		background-color: $c-white;
+		@include fluid-font($mobile, $desktop, 16px, 36px);
+		@include smoothValue('padding', 8px, 16px, $mobile, $desktop);
+		@include smoothValue('padding-left', 15px, 25px, $mobile, $desktop);
+		@include smoothValue('margin-right', 30px, 124px, $mobile, $desktop);
+		@include max-screen($laptop) {
+			border-radius: 16px;
+		}
+		@include max-screen($tablet) {
+			border-radius: 12px;
+		}
+		@include max-screen($mobile) {
+			border-radius: 7px;
+		}
+		&._tab-1 {
+			border-radius: 16px;
+			width: calc(588 / 1370 * 100%);
+			background-color: rgba($c-alice-blue, 0.25);
+			color: $c-white;
+			@include max-screen($mobile-only) {
+				width: calc(202 / 275 * 100%);
+				border-radius: 7px;
+				background-color: $c-white;
+				color: $c-dodger-blue;
+			}
+		}
+	}
+	&__accent-text-wrapper {
+		display: block;
+		width: 64%;
+		text-align: center;
+	}
+	&__video-btn {
+		position: absolute;
+		left: 26px;
+		bottom: 25px;
+		z-index: 1;
+		display: none;
+		align-items: center;
+		border: none;
+		background: transparent;
+		font-family: inherit;
+		line-height: 1;
+		letter-spacing: 0.03em;
+		color: $c-white;
+		cursor: pointer;
+		@include fluid-font($mobile-md, $mobile-only, 16px, 24px);
+		@include max-screen($mobile-only) {
+			display: flex;
+		}
+		@include max-screen($mobile-md) {
+			bottom: 16px;
+		}
+	}
+	&__video-btn-icon {
+		--size: 55px;
+		display: flex;
+		align-items: center;
+		width: var(--size);
+		height: var(--size);
+		padding-right: 19px;
+		padding-left: 30px;
+		margin-right: 12px;
+		border-radius: 50%;
+		background-color: $c-free-speech-red;
+		box-sizing: border-box;
+		@include smoothValue('--size', 55px, (55px * 1.5), $mobile-md, $mobile-only);
+		@include max-screen($mobile-only-2) {
+			padding-right: 12px;
+			padding-left: 20px;
+		}
+		svg {
+			width: 100%;
+			height: auto;
+		}
+	}
+	&__video {
+		position: absolute;
+		@include smoothValue('top', 40px, 60px, $mobile-only, $desktop);
+		@include smoothValue('right', 20px, 60px, $mobile-only, $desktop);
+		width: calc(378 / 1370 * 100%);
+		@include max-screen($laptop) {
+			width: calc(396 / 1370 * 100%);
+		}
+		@include max-screen($laptop-sm-2) {
+			width: calc(450 / 1370 * 100%);
+		}
+		@include max-screen($mobile-only) {
+			display: none;
+		}
+	}
+	&__video-wrapper {
+		padding-top: calc(756 / 378 * 100%);
+		@include max-screen($laptop) {
+			padding-top: calc(792 / 396 * 100%);
+		}
+		@include max-screen($laptop-sm-2) {
+			padding-top: calc(900 / 450 * 100%);
+		}
+	}
+	&__video-inner {
+		position: absolute;
+		top: 0;
+		left: 0;
+		box-sizing: border-box;
+		width: 100%;
+		height: 100%;
+		padding: 20px 30px;
+	}
+	&__video-content {
+		width: 100%;
+		height: 100%;
+	}
+	&__video-frame-image {
+		z-index: 4;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	&__video-frame-mockup {
+		z-index: 3;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 97%;
+		height: 97%;
+		border-radius: 18%;
+	}
+	&__video-first-shot {
+		z-index: 2;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 97%;
+		height: 100%;
+		border-radius: 18%;
+		transform: translateX(-50%);
+	}
+	&__decorations {
+		position: relative;
+		bottom: 0;
+		width: 100%;
+		margin-top: auto;
+	}
+	&__decorations-inner {
+		&._tab-1 {
+			padding-top: 49.347%;
+			@include max-screen($mobile-only) {
+				padding-top: 42%;
+			}
+		}
+		&._tab-2 {
+			padding-top: 36.032%;
+			@include max-screen($mobile-only) {
+				padding-top: 42%;
+			}
+		}
+		&._tab-3 {
+			padding-top: 67.773%;
+			@include max-screen($mobile-only) {
+				padding-top: 42%;
+			}
+		}
+		&._tab-4 {
+			padding-top: 25.698%;
+			@include max-screen($mobile-only) {
+				padding-top: 42%;
+			}
+		}
+		&._tab-5 {
+			padding-top: 37.31%;
+			@include max-screen($mobile-only) {
+				padding-top: 42%;
+			}
+		}
+	}
+	&__semi-circle-image {
+		position: absolute;
+		width: calc(522 / 704 * 100%);
+		height: auto;
+		bottom: 0;
+		left: 6.4%;
+		@include max-screen($mobile-only) {
+			width: calc(221 / 275 * 100%);
+		}
+		&._tab-2 {
+			left: 6.4%;
+		}
+		&._tab-3 {
+			width: calc(537 / 704 * 100%);
+			left: 4.2%;
+		}
+		&._tab-4 {
+			width: calc(837 / 704 * 100%);
+			left: 43.6%;
+		}
+		&._tab-5 {
+			width: calc(837 / 704 * 100%);
+			left: 35%;
+		}
+	}
+	&__woman {
+		position: absolute;
+		width: calc(390 / 704 * 100%);
+		height: auto;
+		bottom: 0;
+		right: -9.1%;
+		@include max-screen($mobile-only) {
+			width: calc(130 / 275 * 100%);
+			right: 0;
+		}
+		@include max-screen($mobile-md) {
+			right: -15%;
+		}
+		&._tab-2 {
+			right: -11%;
+			width: calc(371 / 704 * 100%);
+			@include max-screen($mobile-only) {
+				width: calc(115 / 275 * 100%);
+				right: -3%;
+			}
+			@include max-screen($mobile-md) {
+				right: -10%;
+			}
+		}
+		&._tab-3 {
+			right: -9.4%;
+			width: calc(458 / 704 * 100%);
+			@include max-screen($mobile-only) {
+				width: calc(130 / 275 * 100%);
+				right: 0;
+			}
+		}
+		&._tab-4 {
+			right: -17.4%;
+			width: calc(414 / 704 * 100%);
+			@include max-screen($mobile-only) {
+				width: calc(130 / 275 * 100%);
+				right: 0;
+			}
+		}
+		&._tab-5 {
+			right: -10%;
+			width: calc(362 / 704 * 100%);
+			@include max-screen($mobile-only) {
+				width: calc(130 / 275 * 100%);
+				right: 0;
+			}
+		}
+	}
+	&__decorations-icon {
+		position: absolute;
+		top: 0;
+		@include smoothValue('width', 30px, 88px, $mobile, $desktop);
+		@include smoothValue('height', 30px, 88px, $mobile, $desktop);
+		@include max-screen($mobile-only) {
+			display: none;
+		}
+		img {
+			@include smoothValue('--size', 20px, 62px, $mobile, $desktop);
+			width: var(--size);
+			height: var(--size);
+		}
+		&._tab-1-emoji-1 {
+			top: 17.8%;
+			left: 9.5%;
+			img {
+				@include smoothValue('--size', 20px, 62px, $mobile, $desktop);
+			}
+		}
+		&._tab-1-emoji-2 {
+			top: 26.1%;
+			left: 31.1%;
+			img {
+				@include smoothValue('--size', 20px, 62px, $mobile, $desktop);
+			}
+		}
+		&._tab-1-emoji-3 {
+			top: 55%;
+			left: 24.5%;
+			img {
+				@include smoothValue('--size', 20px, 62px, $mobile, $desktop);
+			}
+		}
+		&._tab-2-emoji-1 {
+			top: 38.8%;
+			left: 8.2%;
+			img {
+				@include smoothValue('--size', 20px, 54px, $mobile, $desktop);
+			}
+		}
+		&._tab-2-emoji-2 {
+			top: 18.6%;
+			left: 22.2%;
+			img {
+				@include smoothValue('--size', 20px, 50px, $mobile, $desktop);
+			}
+		}
+		&._tab-3-emoji-1 {
+			top: 27%;
+			left: 4.9%;
+			img {
+				@include smoothValue('--size', 20px, 52px, $mobile, $desktop);
+			}
+		}
+		&._tab-3-emoji-2 {
+			top: 3%;
+			left: 32%;
+			img {
+				@include smoothValue('--size', 20px, 50px, $mobile, $desktop);
+			}
+		}
+		&._tab-3-emoji-3 {
+			top: 44.8%;
+			left: 20%;
+			img {
+				@include smoothValue('--size', 20px, 67px, $mobile, $desktop);
+			}
+		}
+		&._tab-4-emoji-1 {
+			top: 28.4%;
+			left: 41.5%;
+			img {
+				@include smoothValue('--size', 20px, 54px, $mobile, $desktop);
+			}
+		}
+		&._tab-5-emoji-1 {
+			top: 24.4%;
+			left: 9.9%;
+			img {
+				position: relative;
+				top: -2px;
+				@include smoothValue('--size', 20px, 62px, $mobile, $desktop);
+			}
+		}
+		&._tab-5-emoji-2 {
+			top: 50.2%;
+			left: 28.2%;
+			img {
+				@include smoothValue('--size', 20px, 50px, $mobile, $desktop);
+			}
+		}
+		&._tab-5-emoji-3 {
+			top: 24%;
+			left: 42.5%;
+			img {
+				@include smoothValue('--size', 20px, 54px, $mobile, $desktop);
+			}
+		}
+	}
+}

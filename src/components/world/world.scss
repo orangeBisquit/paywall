@@ -1,0 +1,64 @@
+.world {
+	background-color: $c-dodger-blue;
+	text-align: center;
+	overflow: hidden;
+	&__container {
+		padding-top: 130px;
+		@include max-screen($laptop-sm) {
+			padding-top: 100px;
+		}
+		@include max-screen($mobile-only) {
+			padding-top: 60px;
+			padding-bottom: 60px;
+		}
+	}
+	&__title {
+		margin-bottom: 28px;
+		color: $c-white;
+		letter-spacing: 0;
+		@include max-screen($mobile-only) {
+			margin-bottom: 29px;
+		}
+		@include max-screen($mobile) {
+			width: 100%;
+			padding-right: 0;
+		}
+	}
+	&__text {
+		font-weight: 400;
+		font-size: 26px;
+		line-height: 140%;
+		max-width: clamp(280px, 100%, 688px);
+		margin: 0 auto 52px;
+		color: $c-white;
+		@include max-screen($mobile-only) {
+			width: 85%;
+			margin-bottom: 30px;
+			font-size: 16px;
+			line-height: 130%;
+			letter-spacing: 0.03em;
+		}
+	}
+	&__img {
+		position: relative;
+		// 763px width desktop
+		width: calc(763 / 1370 * 100%);
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: -129px;
+		background-image: inline('globe.svg');
+		background-repeat: no-repeat;
+		background-size: contain;
+		&::before {
+			content: '';
+			display: block;
+			width: 100%;
+			// 763px height desktop
+			padding-bottom: calc(728 / 763 * 100%);
+		}
+		@include max-screen($mobile-only) {
+			width: calc(100% - 26px);
+			margin-bottom: 0;
+		}
+	}
+}

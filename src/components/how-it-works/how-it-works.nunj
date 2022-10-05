@@ -1,0 +1,57 @@
+<section class="how-it-works" id="how-it-works">
+	<div class="how-it-works__container container">
+		<h2 class="how-it-works__title title">Paywall работает для вас</h2>
+		<p class="how-it-works__text">Наш сервис для тех, кто создает или хочет создавать контент</p>
+		<ul class="how-it-works__list">
+			<li class="how-it-works__item" data-auto-show="default">
+				<div class="how-it-works__item-image-wrapper">
+					<img class="how-it-works__item-image" src="../../assets/images/how-it-works/item-1.jpg" width="132" height="132">
+				</div>
+				<p class="how-it-works__item-name">музыканты</p>
+			</li>
+			<li class="how-it-works__item" data-auto-show="default">
+				<div class="how-it-works__item-image-wrapper">
+					<img class="how-it-works__item-image" src="../../assets/images/how-it-works/item-2.jpg" width="132" height="132">
+				</div>
+				<p class="how-it-works__item-name">дизайнеры</p>
+			</li>
+			<li class="how-it-works__item" data-auto-show="default">
+				<div class="how-it-works__item-image-wrapper">
+					<img class="how-it-works__item-image" src="../../assets/images/how-it-works/item-3.jpg" width="132" height="132">
+				</div>
+				<p class="how-it-works__item-name">юристы</p>
+			</li>
+			<li class="how-it-works__item" data-auto-show="default">
+				<div class="how-it-works__item-image-wrapper">
+					<img class="how-it-works__item-image" src="../../assets/images/how-it-works/item-4.jpg" width="132" height="132">
+				</div>
+				<p class="how-it-works__item-name">стримеры</p>
+			</li>
+			<li class="how-it-works__item" data-auto-show="default">
+				<div class="how-it-works__item-image-wrapper">
+					<img class="how-it-works__item-image" src="../../assets/images/how-it-works/item-5.jpg" width="132" height="132">
+				</div>
+				<p class="how-it-works__item-name">блогеры</p>
+			</li>
+			<li class="how-it-works__item" data-auto-show="default">
+				<div class="how-it-works__item-image-wrapper">
+					<img class="how-it-works__item-image" src="../../assets/images/how-it-works/item-6.jpg" width="132" height="132">
+				</div>
+				<p class="how-it-works__item-name">эксперты</p>
+			</li>
+			<li class="how-it-works__item" data-auto-show="default">
+				<div class="how-it-works__item-image-wrapper">
+					<img class="how-it-works__item-image" src="../../assets/images/how-it-works/item-7.jpg" width="132" height="132">
+				</div>
+				<p class="how-it-works__item-name">экономисты</p>
+			</li>
+			<li class="how-it-works__item" data-auto-show="default">
+				<div class="how-it-works__item-image-wrapper">
+					<img class="how-it-works__item-image" src="../../assets/images/how-it-works/item-8.jpg" width="132" height="132">
+				</div>
+				<p class="how-it-works__item-name">преподаватели</p>
+			</li>
+		</ul>
+		<p class="how-it-works__text _bottom">Если вы&nbsp;потеряли заработок с&nbsp;YouTube, Patreon, Twitch, TikTok или Instagram и&nbsp;не&nbsp;можете больше выводить деньги, попробуйте российский сервис Paywall</p>
+	</div>
+</section>

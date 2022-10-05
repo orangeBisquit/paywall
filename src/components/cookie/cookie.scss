@@ -1,0 +1,59 @@
+.cookie {
+	display: none;
+	flex-direction: column;
+	position: fixed;
+	bottom: 25px;
+	left: 42px;
+	z-index: 1;
+	background-color: $c-white;
+	border-radius: 20px;
+	box-shadow: 0px 0px 35px 1px rgba(64, 153, 247, 0.3);
+	box-sizing: border-box;
+	@include smoothValue('padding', 25px, 45px, $mobile, $desktop);
+	@include max-screen($mobile) {
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		box-shadow: 0px 2px 15px rgba(8, 40, 70, 0.25);
+		border-radius: 8px 8px 0px 0px;
+	}
+	&._active {
+		display: flex;
+	}
+	&__text {
+		font-size: 26px;
+		line-height: 123%;
+		letter-spacing: 0.03em;
+		color: $c-catalina-blue;
+		@include smoothValue('font-size', 18px, 26px, $mobile, $desktop);
+		@include max-screen($mobile) {
+			margin-bottom: 7px;
+			line-height: 20px;
+		}
+	}
+	&__link {
+		margin-bottom: 30px;
+		font-size: 26px;
+		line-height: 123%;
+		letter-spacing: 0.03em;
+		color: $c-dodger-blue;
+		@extend .animated;
+		@include smoothValue('font-size', 14px, 26px, $mobile, $desktop);
+		@include max-screen($mobile) {
+			margin-bottom: 16px;
+			font-size: 14px;
+			line-height: 18px;
+		}
+	}
+	&__button-thanks {
+		max-width: 128px;
+		@include max-screen($mobile) {
+			width: 100%;
+			max-width: none;
+			&._xsm {
+				padding: 17px 16px;
+			}
+		}
+	}
+}

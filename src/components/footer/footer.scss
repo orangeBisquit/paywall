@@ -1,0 +1,174 @@
+.footer {
+	background: $default-gradient;
+	@include smoothValue('padding-top', 76px, 130px, $mobile, $desktop);
+	@include smoothValue('padding-bottom', 32px, 41px, $mobile, $desktop);
+	&__top-menu {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin-bottom: 40px;
+		@include max-screen($desktop-2) {
+			justify-content: space-between;
+			align-items: center;
+		}
+		@include max-screen($laptop-sm-2) {
+			flex-direction: column;
+			justify-content: flex-start;
+			margin-bottom: 28px;
+		}
+	}
+	&__support {
+		margin-bottom: 129px;
+		@include smoothValue('margin-bottom', 50px, 129px, $mobile, $desktop);
+	}
+	&__icons {
+		padding-top: 4px;
+		margin-right: calc(50 / 1370 * 100%);
+		@include max-screen($laptop-sm-2) {
+			padding-top: 0;
+			margin-bottom: 73px;
+			margin-right: 0;
+		}
+	}
+	&__payment-methods {
+		display: flex;
+		column-gap: 9px;
+	}
+	&__logo {
+		margin-bottom: 12px;
+		width: 163px;
+		height: 40px;
+	}
+	&__payment-icon {
+		&._visa {
+			width: 55px;
+			height: 18px;
+		}
+		&._mastercard {
+			width: 30px;
+			height: 18px;
+		}
+		&._mir {
+			width: 62px;
+			height: 18px;
+		}
+	}
+	&__buttons-wrapper {
+		margin-left: auto;
+		display: flex;
+		align-items: center;
+		@include max-screen($desktop-2) {
+			margin-left: 0;
+		}
+		@include max-screen($laptop-sm-2) {
+			margin-left: 0;
+			flex-direction: row-reverse;
+		}
+		@include max-screen($mobile-only-2) {
+			width: 100%;
+		}
+	}
+	&__button-telegram {
+		display: flex;
+		align-items: center;
+		margin-left: 30px;
+		padding: 13px 25px 12px 18px;
+		font-size: 18px;
+		line-height: 19px;
+		@include max-screen($laptop-sm-2) {
+			margin-left: 0;
+			margin-right: 26px;
+		}
+		@include max-screen($mobile-only-2) {
+			justify-content: center;
+			flex-grow: 1;
+			font-size: 14px;
+			line-height: 16px;
+		}
+	}
+	&__button-telegram-icon {
+		display: block;
+		width: 20px;
+		height: 17px;
+		margin-right: 10px;
+	}
+	&__nav {
+		display: flex;
+		column-gap: 50px;
+		padding-top: 14px;
+		@include max-screen($laptop-sm) {
+			column-gap: 30px;
+		}
+		@include max-screen($laptop-sm-2) {
+			padding-top: 0;
+			margin-bottom: 25px;
+		}
+		@include max-screen($mobile-only) {
+			flex-direction: column;
+			row-gap: 26px;
+		}
+	}
+	&__bottom-menu-list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		@include max-screen($desktop-2) {
+			margin-right: 70px;
+			margin-left: 70px;
+			justify-content: center;
+			column-gap: 40px;
+			row-gap: 20px;
+		}
+		@include max-screen($mobile-only) {
+			display: grid;
+			grid-template-columns: repeat(1, 1fr);
+			row-gap: 5px;
+		}
+	}
+	&__bottom-menu-item {
+		position: relative;
+		@include max-screen($desktop-2) {
+			&:nth-child(3n + 2) {
+				text-align: center;
+			}
+			&:nth-child(3n) {
+				text-align: right;
+			}
+		}
+		@include max-screen($mobile-only) {
+			text-align: center;
+			&:nth-child(3n) {
+				text-align: center;
+			}
+		}
+		&:first-child {
+			a {
+				padding-left: 0;
+			}
+		}
+		&:last-child {
+			a {
+				padding-right: 0;
+				border-right: 0;
+			}
+		}
+	}
+	&__bottom-menu-link {
+		display: inline-block;
+		padding: 0 14px;
+		border-right: 1px solid $c-heather;
+		color: $c-heather;
+		font-size: 16px;
+		line-height: 19px;
+		text-decoration: none;
+		@extend .animated;
+		@include max-screen($desktop-2) {
+			border: none;
+			padding: 0;
+		}
+		@include max-screen($mobile-only) {
+			font-size: 13px;
+			line-height: 15px;
+		}
+	}
+}

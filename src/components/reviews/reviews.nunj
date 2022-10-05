@@ -1,0 +1,70 @@
+<section id="reviews" class="reviews">
+	<h3 class="reviews__title title">Отзывы</h3>
+	<div class="reviews__buttons-wrapper">
+		<button class="reviews__button" type="button" data-button-left>
+			{{ icon({
+					iconName: 'arrow-circle',
+					className: 'reviews__arrow-icon'
+			}) }}
+		</button>
+		<button class="reviews__button" type="button" data-button-right>
+			{{ icon({
+					iconName: 'arrow-circle',
+					className: 'reviews__arrow-icon'
+			}) }}
+		</button>
+	</div>
+	<div class="reviews__carousel-wrapper">
+		<div class="reviews__list main-carousel">
+			<div class="reviews__item">
+				<div class="reviews__avatar-wrapper">
+					<img class="reviews__avatar-img" src="../../assets/images/reviews/review-avatar-1.jpg" alt="" aria-hidden="true">
+				</div>
+				<p class="reviews__item-name">Ремонт с Jeevaa design</p>
+				<p class="reviews__item-info">От дизайн-проекта до реализации</p>
+				<p class="reviews__item-text">Paywall&nbsp;&mdash; это удобно. Все вопросы по&nbsp;оплатам, включая продление или отмену подписки, вопросы возвратов, рекуррентных платежей и&nbsp;тому подобного решает сервис, а&nbsp;не&nbsp;мы. И&nbsp;с&nbsp;подключением онлайн-кассы возиться не&nbsp;пришлось.</p>
+			</div>
+			<div class="reviews__item">
+				<div class="reviews__avatar-wrapper">
+					<img class="reviews__avatar-img" src="../../assets/images/reviews/review-avatar-2.jpg" alt="" aria-hidden="true">
+				</div>
+				<p class="reviews__item-name">Место встречи</p>
+				<p class="reviews__item-info">Психологическая поддержка</p>
+				<p class="reviews__item-text">Paywall берёт на&nbsp;себя все вопросы с&nbsp;ежемесячными платежами, проверкой оплаты, добавлением подписчиков в&nbsp;чаты&nbsp;&mdash; то, что отняло&nbsp;бы огромное количество времени, если&nbsp;бы делалось вручную. Все просто, интуитивно, не&nbsp;нужно тратить силы на&nbsp;не&nbsp;свою работу, а&nbsp;в&nbsp;случае затруднений служба поддержки всегда на&nbsp;связи.</p>
+			</div>
+			<div class="reviews__item">
+				<div class="reviews__avatar-wrapper">
+					<img class="reviews__avatar-img" src="../../assets/images/reviews/review-avatar-3.jpg" alt="" aria-hidden="true">
+				</div>
+				<p class="reviews__item-name">Алина Грановская. <br> Альбом «БДСМ»</p>
+				<p class="reviews__item-info">Релиз музыкального альбома</p>
+				<p class="reviews__item-text">Для меня Paywall&nbsp;&mdash; это выгодно. Я&nbsp;заработала больше 25&nbsp;000 рублей за&nbsp;4&nbsp;дня. Немного? На&nbsp;стриминговых площадках я&nbsp;зарабатывала столько примерно за&nbsp;полгода при миллионных прослушиваниях!</p>
+			</div>
+			<div class="reviews__item">
+				<div class="reviews__avatar-wrapper">
+					<img class="reviews__avatar-img" src="../../assets/images/reviews/review-avatar-4.jpg" alt="" aria-hidden="true">
+				</div>
+				<p class="reviews__item-name">Женский ренессанс</p>
+				<p class="reviews__item-info">Канал об отношениях и знакомствах</p>
+				<p class="reviews__item-text">Ваш сервис достаточно удобен, работает без каких-то сбоев или неполадок, у&nbsp;меня не&nbsp;было проблем с&nbsp;размещением контента, у&nbsp;моих клиентов&nbsp;&mdash; с&nbsp;доступом к&nbsp;ресурсу. Однако, ссылки на&nbsp;чат через инстаграм не&nbsp;работают, это минус.</p>
+				<p class="reviews__item-text">В&nbsp;остальном, все работает прекрасно, удобно, мне нравится, что можно отправить ссылку...</p>
+			</div>
+			<div class="reviews__item">
+				<div class="reviews__avatar-wrapper">
+					<img class="reviews__avatar-img" src="../../assets/images/reviews/review-avatar-5.jpg" alt="" aria-hidden="true">
+				</div>
+				<p class="reviews__item-name">Клуб «Испытатели природы»</p>
+				<p class="reviews__item-info">Ученые-биологи о природе</p>
+				<p class="reviews__item-text">Paywall помог нам организовать закрытый клуб по&nbsp;подписке на&nbsp;привычной площадке и&nbsp;для нас, и&nbsp;для родителей, и&nbsp;для детей. А&nbsp;ещё освободил нас от&nbsp;хлопот, связанных с&nbsp;запусками отдельных курсов.</p>
+			</div>
+			<div class="reviews__item">
+				<div class="reviews__avatar-wrapper">
+					<img class="reviews__avatar-img" src="../../assets/images/reviews/review-avatar-6.jpg" alt="" aria-hidden="true">
+				</div>
+				<p class="reviews__item-name">Фотограф Сергей Фрейер</p>
+				<p class="reviews__item-info">Бэкстейджи и истории со съёмок </p>
+				<p class="reviews__item-text">Я&nbsp;уже порекомендовал Paywall своим знакомым ребятам)) Ваш бот правда легко и&nbsp;быстро настраивается, всё удобно и&nbsp;без заморочек! Но&nbsp;больший плюс&nbsp;&mdash; это человеческая техподдержка, которая в&nbsp;лепёшку разобъётся но&nbsp;поможет решить все сложные вопросы, а&nbsp;также вопросы подписчиков . Однозначно лайк)</p>
+			</div>
+		</div>
+	</div>
+</section>

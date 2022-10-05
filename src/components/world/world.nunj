@@ -1,0 +1,7 @@
+<section id="world" class="world">
+	<div class="world__container container">
+		<h3 class="world__title title">Продавайте контент во&nbsp;всем мире</h3>
+		<p class="world__text">Paywall мультиязычен, принимает платежи со&nbsp;всего мира и&nbsp;поддерживает основные валюты: рубли, доллары и&nbsp;евро</p>
+		<div class="world__img"></div>
+	</div>
+</section>

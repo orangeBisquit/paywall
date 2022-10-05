@@ -1,0 +1,33 @@
+{% from "./_head-scripts.nunj" import headScripts %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Front-end by sborkaproject.com -->
+		<meta charset="utf-8"/>
+		<title>
+			{% block title %}Paywall{% endblock %}
+		</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+		<link rel="preload" href="assets/fonts/GTEestiProDisplay-Light.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="assets/fonts/GTEestiProDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="assets/fonts/GTEestiProDisplay-Medium.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="assets/fonts/GTEestiProDisplay-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+		{{ headScripts() }}
+
+		{% block stylesheets %}
+			<link rel="stylesheet" href="assets/css/styles.css?hash"/>
+		{% endblock stylesheets %}
+	</head>
+	<body>
+
+		<div class="wrapper">
+			{% block content %}{% endblock content %}
+		</div>
+
+		{% block scripts %}
+			<script src="assets/js/bundle.js?hash"></script>
+		{% endblock scripts %}
+	</body>
+</html>

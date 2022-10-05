@@ -1,0 +1,32 @@
+.lang-switch {
+	background-color: transparent;
+	border: 0;
+	padding: 0;
+	height: 50px;
+	cursor: pointer;
+	border-radius: 8px;
+	overflow: hidden;
+	&._sm {
+		width: 82px;
+		height: 48px;
+		svg {
+			width: 82px;
+			height: 48px;
+		}
+	}
+	&__img {
+		display: inline-block;
+		width: 87px;
+		height: 50px;
+		border-radius: 8px;
+		@include max-screen($desktop-2) {
+			width: 74px;
+			height: 40px;
+		}
+		&._mobile-hidden {
+			@include max-screen($laptop-sm-2) {
+				display: none;
+			}
+		}
+	}
+}

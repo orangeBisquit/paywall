@@ -1,0 +1,35 @@
+<section class="beginner">
+	<div class="beginner__container container">
+		<h3 class="beginner__title title _light">Вы новичок? Зарабатывать можно, даже если у вас всего 10 подписчиков</h3>
+		<div class="beginner__cards-list">
+			<div class="beginner__card">
+				<div class="beginner__card-top">
+					{{ icon({
+							iconName: 'emoji-think',
+							className: 'beginner__emoji-icon'
+					}) }}
+				</div>
+				<p class="beginner__text">Вы&nbsp;не&nbsp;хотите делать рекламу? <br> Зарабатывайте только на&nbsp;собственном контенте</p>
+			</div>
+			<div class="beginner__card">
+				<div class="beginner__card-top">
+					{{ icon({
+							iconName: 'emoji-sweat',
+							className: 'beginner__emoji-icon'
+					}) }}
+				</div>
+				<p class="beginner__text">Хотите использовать и&nbsp;рекламу, и&nbsp;подписку? Эти два варианта монетизации можно сочетать</p>
+			</div>
+			<div class="beginner__card">
+				<div class="beginner__card-top">
+					{{ icon({
+							iconName: 'emoji-ok',
+							className: 'beginner__emoji-icon'
+					}) }}
+				</div>
+				<p class="beginner__text">С&nbsp;Paywall уже зарабатывают учителя, дизайнеры, финансисты, разработчики. Получится и&nbsp;у&nbsp;вас!</p>
+			</div>
+		</div>
+		<button class="beginner__button button _special" type="button">Начать зарабатывать</button>
+	</div>
+</section>

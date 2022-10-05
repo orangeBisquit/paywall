@@ -1,0 +1,79 @@
+<div class="menu-modal" data-menu-modal>
+	<div class="menu-modal__container container">
+		<div class="menu-modal__top">
+			<button class="menu-modal__button-login button _ghost">Войти</button>
+			<span class="menu-modal__logo-link" data-link="#hero">
+				{{ icon({
+						iconName: 'logo',
+						className: 'menu-modal__logo-icon'
+				}) }}
+			</span>
+			<button class="menu-modal__button-close" type="button" data-menu-modal-close>
+				{{ icon({
+						iconName: 'close',
+						className: 'menu-modal__close-icon'
+				}) }}
+			</button>
+		</div>
+		<ul class="menu-modal__nav">
+			<li class="menu-modal__nav-item" data-menu-modal-accordion="element">
+				<button type="button" class="menu-modal__nav-link" data-menu-modal-accordion="btn">
+					Что за сервис
+					{{ icon({
+							iconName: 'arrow-down',
+							className: 'menu-modal__nav-link-icon'
+					}) }}
+				</button>
+				<div class="menu-modal__content">
+					<ul class="menu-modal__list">
+						<li class="menu-modal__item">
+							<span class="menu-modal__link link" data-link="#how-it-works" data-menu-modal-link>Для кого</span>
+						</li>
+						<li class="menu-modal__item">
+							<span class="menu-modal__link link" data-link="#superpowers" data-menu-modal-link>Суперспособности Paywall</span>
+						</li>
+						<li class="menu-modal__item">
+							<span class="menu-modal__link link" data-link="#payments" data-menu-modal-link>Автоплатежи</span>
+						</li>
+						<li class="menu-modal__item">
+							<span class="menu-modal__link link" data-link="#calculator" data-menu-modal-link>Сколько можно заработать</span>
+						</li>
+						<li class="menu-modal__item">
+							<span class="menu-modal__link link" data-link="#world" data-menu-modal-link>Продавайте контент во всем мире</span>
+						</li>
+					</ul>
+					<ul class="menu-modal__list">
+						<li class="menu-modal__item">
+							<span class="menu-modal__link link" data-link="#how-to-start" data-menu-modal-link>Начать зарабатывать просто</span>
+						</li>
+						<li class="menu-modal__item">
+							<span class="menu-modal__link link" data-link="#help" data-menu-modal-link>Нужна поддержка?</span>
+						</li>
+						<li class="menu-modal__item">
+							<span class="menu-modal__link link" data-link="#reviews" data-menu-modal-link>Отзывы</span>
+						</li>
+						<li class="menu-modal__item">
+							<span class="menu-modal__link link" data-link="#telegram" data-menu-modal-link>Почему Телеграм</span>
+						</li>
+						<li class="menu-modal__item">
+							<span class="menu-modal__link link" data-link="#model" data-menu-modal-link>Почему подписная модель</span>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li class="menu-modal__nav-item">
+				<span data-link="#" class="menu-modal__nav-link">Помощь</span>
+			</li>
+			<li class="menu-modal__nav-item">
+				<span data-link="#" class="menu-modal__nav-link">FAQ</span>
+			</li>
+			<li class="menu-modal__nav-item">
+				<span data-link="#" class="menu-modal__nav-link">Для подписчиков</span>
+			</li>
+			<li class="menu-modal__nav-item">
+				<span data-link="#" class="menu-modal__nav-link">Блог</span>
+			</li>
+		</ul>
+		<button class="menu-modal__button-start button _special">Начать зарабатывать</button>
+	</div>
+</div>

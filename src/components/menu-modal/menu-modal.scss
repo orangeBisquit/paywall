@@ -1,0 +1,194 @@
+.menu-modal {
+	$parent-selector: &;
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: $c-white;
+	z-index: 101;
+	height: 100vh;
+	overflow: auto;
+	&._active {
+		display: block;
+	}
+	&__container {
+		@include smoothValue('padding-bottom', 20px, 48px, $mobile-only, $desktop);
+	}
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		@include smoothValue('padding-top', 20px, 48px, $mobile-only, $desktop);
+		@include smoothValue('padding-bottom', 20px, 48px, $mobile-only, $desktop);
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 4px;
+			background-color: $c-dodger-blue;
+			border-radius: 4px;
+			@include max-screen($laptop) {
+				height: 3px;
+			}
+			@include max-screen($laptop-sm-2) {
+				display: none;
+			}
+		}
+	}
+	&__logo-icon {
+		@include smoothValue('width', 142px, 244px, $mobile-only, $desktop);
+		@include smoothValue('height', 35px, 60px, $mobile-only, $desktop);
+	}
+	&__button-close {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0;
+		bottom: 0;
+		background-color: transparent;
+		border: 0;
+		padding: 7px;
+		cursor: pointer;
+		color: $c-dodger-blue;
+		&:hover {
+			#{$parent-selector} {
+				&__close-icon {
+					color: $c-amber;
+				}
+			}
+		}
+		@include max-screen($laptop-sm-2) {
+			width: 30px;
+			height: 30px;
+			padding: 0;
+			position: absolute;
+			top: 24px;
+			right: 24px;
+		}
+	}
+	&__close-icon {
+		width: 36px;
+		height: 36px;
+		transition: $fast-transition-duration color $in-transition-function;
+		@include max-screen($laptop-sm-2) {
+			width: 24px;
+			height: 24px;
+		}
+	}
+	&__nav {
+		@include max-screen($laptop-sm-2) {
+			margin-bottom: 38px;
+		}
+	}
+	&__nav-item {
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+	&__nav-link {
+		display: none;
+		align-items: center;
+		background-color: transparent;
+		border: none;
+		font-size: 18px;
+		line-height: 21px;
+		color: $c-catalina-blue;
+		font-family: inherit;
+		letter-spacing: 0.03em;
+		text-decoration: none;
+		cursor: pointer;
+		@extend .animated;
+		@include max-screen($laptop-sm-2) {
+			display: flex;
+		}
+		&:hover {
+			color: $c-dodger-blue;
+		}
+	}
+	&__nav-link-icon {
+		width: 14px;
+		height: 8px;
+		margin-left: 11px;
+
+		[data-menu-modal-accordion='element'].active & {
+			transform: rotate(180deg);
+		}
+	}
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		gap: 50px;
+		@include smoothValue('padding-top', 40px, 55px, $laptop-sm-2, $desktop);
+		@include smoothValue('margin-bottom', 80px, 48px, $laptop-sm-2, $desktop);
+		@include max-screen($laptop-sm-2) {
+			display: none;
+			flex-direction: column;
+			padding-top: 20px;
+			padding-left: 18px;
+			margin-bottom: 0;
+			gap: 20px;
+			[data-menu-modal-accordion='element'].active & {
+				display: flex;
+			}
+		}
+	}
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: 28px;
+			@include max-screen($laptop-sm-2) {
+				margin-bottom: 20px;
+			}
+		}
+	}
+	&__link {
+		display: inline-block;
+		color: $c-catalina-blue;
+		font-size: 35px;
+		line-height: 100%;
+		text-decoration: none;
+		letter-spacing: 0.03em;
+		cursor: pointer;
+		@include smoothValue('padding', 5px, 10px, $laptop-sm-2, $desktop);
+		@include smoothValue('padding-left', 0, 0, $laptop-sm-2, $desktop);
+		@include smoothValue('font-size', 18px, 35px, $laptop-sm-2, $desktop);
+		@include max-screen($laptop-sm-2) {
+			padding: 0;
+			font-size: 18px;
+			line-height: 21px;
+		}
+	}
+	&__button-start {
+		min-width: calc(445 / 1370 * 100%);
+		@include max-screen($laptop) {
+			display: block;
+			margin: 0 auto;
+		}
+		@include max-screen($mobile-only) {
+			margin-left: 0;
+			min-width: 60%;
+		}
+		@include max-screen($mobile-only-2) {
+			min-width: 80%;
+		}
+		@include max-screen($mobile) {
+			min-width: 100%;
+		}
+	}
+	&__button-login {
+		min-width: 270px;
+		display: none;
+		@include smoothValue('padding', 17px, 20px, $mobile, $laptop-sm-2);
+		@include smoothValue('font-size', 16px, 22px, $mobile, $laptop-sm-2);
+		@include max-screen($laptop-sm-2) {
+			display: block;
+		}
+	}
+	&__logo-link {
+		@include max-screen($laptop-sm-2) {
+			display: none;
+		}
+	}
+}

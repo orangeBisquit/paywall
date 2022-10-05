@@ -1,0 +1,5 @@
+<div class="cookie cookies-info-shown">
+	<p class="cookie__text">Мы используем куки</p>
+	<a class="cookie__link" href="#">Подробнее о файлах Cookie</a>
+	<button class="cookie__button-thanks button _xsm">Спасибо</button>
+</div>

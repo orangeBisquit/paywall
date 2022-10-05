@@ -1,0 +1,17 @@
+<div class="mailing" data-mailing-modal>
+	<div class="mailing__overlay"  data-mailing-modal-overlay>
+		<div class="mailing__modal">
+			<button class="mailing__button-close" type="button" data-mailing-modal-close>
+				{{ icon({
+				iconName: 'close',
+				className: 'menu-modal__button-close-icon'
+		}) }}
+			</button>
+			<p class="mailing__text">Подписаться на рассылку</p>
+			<form class="mailing__form">
+				<input class="mailing__input-email" type="email" placeholder="Введите e-mail"></input>
+				<button class="mailing__button-submit button" type="submit">Начать зарабатывать</button>
+			</form>
+		</div>
+	</div>
+</div>

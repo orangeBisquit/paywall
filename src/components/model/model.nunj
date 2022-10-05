@@ -1,0 +1,104 @@
+<section id="model" class="model">
+	<div class="model__container container _sm">
+		<h3 class="model__title title">Почему подписная модель?</h3>
+		<p class="model__subtitle">Потому что она привычна и удобна для&nbsp;пользователей</p>
+		<div class="model__item _people">
+			<div class="model__item-stat-wrapper">
+				<div class="model__item-stat-inner">
+					<p class="model__item-stat">
+						24<span class="model__item-percent">%</span>
+					</p>
+				</div>
+				<div class="model__item-icon-wrapper _people" data-auto-show="scale">
+					{{ icon({
+						iconName: 'people',
+						className: 'model__stat-icon _people'
+				}) }}
+				</div>
+			</div>
+			<div class="model__item-text-wrapper _people">
+				<p class="model__item-text">Россиян интересуются доступом к&nbsp;эксклюзивному контенту</p>
+				<p class="model__item-disclaimer">по данным исследования Rambler&Co</p>
+			</div>
+		</div>
+		<div class="model__item _bell">
+			<div class="model__item-text-wrapper _bell">
+				<p class="model__item-text">Россиян оформляют подписки, чтобы поддержать авторов</p>
+				<p class="model__item-disclaimer">по данным исследования Rambler&Co</p>
+			</div>
+			<div class="model__item-stat-wrapper">
+				<div class="model__item-stat-inner">
+					<p class="model__item-stat _bell">
+						9<span class="model__item-percent">%</span>
+					</p>
+				</div>
+				<div class="model__item-icon-wrapper _bell" data-auto-show="scale">
+					{{ icon({
+						iconName: 'bell',
+						className: 'model__stat-icon _bell'
+				}) }}
+				</div>
+			</div>
+		</div>
+		<div class="model__item _case">
+			<div class="model__item-stat-wrapper">
+				<div class="model__item-stat-inner _lg">
+					<p class="model__item-stat">
+						75<span class="model__item-percent">%</span>
+					</p>
+				</div>
+				<div class="model__item-icon-wrapper _case" data-auto-show="scale">
+					{{ icon({
+						iconName: 'case',
+						className: 'model__stat-icon _case'
+				}) }}
+				</div>
+			</div>
+			<div class="model__item-text-wrapper _case">
+				<p class="model__item-text">Компаний перейдёт на&nbsp;подписную модель к&nbsp;2023 году</p>
+				<p class="model__item-disclaimer">по прогнозам исследовательской компании Gartner</p>
+			</div>
+		</div>
+		<div class="model__item _stats">
+			<div class="model__item-text-wrapper _stats">
+				<p class="model__item-text">Вырос заработок авторов и&nbsp;криейторов с&nbsp;2021 по&nbsp;2022 год и&nbsp;рост продолжается</p>
+				<p class="model__item-disclaimer">по внутренним данным Paywall</p>
+			</div>
+			<div class="model__item-stat-wrapper">
+				<div class="model__item-stat-inner">
+					<p class="model__item-stat _small">
+						<span class="model__item-stat-small _top">в</span>
+						50
+						<span class="model__item-stat-small _bottom">раз</span>
+					</p>
+				</div>
+				<div class="model__item-icon-wrapper _stats" data-auto-show="scale">
+					{{ icon({
+						iconName: 'stats',
+						className: 'model__stat-icon _stats'
+				}) }}
+				</div>
+			</div>
+		</div>
+		<div class="model__item _rocket">
+			<div class="model__item-stat-wrapper">
+				<div class="model__item-stat-inner _lg">
+					<p class="model__item-stat _small">
+						<span class="model__item-stat-small _top">за</span>
+						15
+						<span class="model__item-stat-small _bottom">минут</span>
+					</p>
+				</div>
+				<div class="model__item-icon-wrapper _rocket" data-auto-show="scale">
+					{{ icon({
+						iconName: 'rocket',
+						className: 'model__stat-icon _rocket'
+				}) }}
+				</div>
+			</div>
+			<div class="model__item-text-wrapper _rocket">
+				<p class="model__item-text">Можно запустить проект по&nbsp;подписке, если есть идея</p>
+			</div>
+		</div>
+	</div>
+</section>

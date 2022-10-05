@@ -1,0 +1,33 @@
+.menu {
+	$parent-selector: &;
+	column-gap: 50px;
+	align-items: center;
+	@include max-screen($laptop-sm) {
+		column-gap: 40px;
+	}
+	@include max-screen($laptop-sm - 100px) {
+		column-gap: 25px;
+	}
+	&__item {
+		background-color: transparent;
+		border: 0;
+		@include smoothValue('font-size', 14px, 18px, $laptop, $desktop);
+		&:hover {
+			#{$parent-selector} {
+				&__arrow-icon {
+					transform: translateY(5px);
+				}
+			}
+		}
+		@include max-screen($desktop-2) {
+			@include smoothValue('line-height', 16px, 21px, $laptop, $desktop-2);
+		}
+	}
+	&__arrow-icon {
+		display: inline-block;
+		margin-left: 5px;
+		width: 16px;
+		height: 9px;
+		transition: transform $default-transition-duration $default-transition-function;
+	}
+}

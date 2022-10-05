@@ -1,0 +1,13 @@
+{% from "../../components/icon/icon.nunj" import icon %}
+
+{% macro langSwitch(props) %}
+	{% set iconClassName %}lang-switch__img {{props.iconClassName}}
+	{% endset %}
+	<button class="lang-switch {{ props.className }}" data-lang-change="{{ props.lang }}" type="button">
+		{{ icon({
+				iconName: props.langImg,
+				className: iconClassName,
+				attributes: 'viewBox="0 0 86 50" width="86" height="50"'
+		}) }}
+	</button>
+{% endmacro %}

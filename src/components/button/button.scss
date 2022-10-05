@@ -1,0 +1,80 @@
+.button {
+	font-family: $default-font-family;
+	border-radius: 16px;
+	background-color: $c-dodger-blue;
+	color: $c-white;
+	padding: 26px 18px;
+	padding-left: 23px;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 116%;
+	border: 1px solid $c-dodger-blue;
+	cursor: pointer;
+	@extend .animated;
+	@include smoothValue('font-size', 16px, 36px, $mobile, $desktop);
+	@include max-screen($mobile) {
+		border-radius: 12px;
+		padding: 17px 11px 14px;
+		padding-left: 10px;
+		font-size: 16px;
+		line-height: 19px;
+	}
+	&:hover {
+		background-color: $c-dodger-blue-2;
+		border-color: $c-dodger-blue-2;
+	}
+	&:active {
+		background-color: $c-dodger-blue-2;
+		border-color: $c-dodger-blue-2;
+		box-shadow: inset 0px 1px 2px #1a60a3;
+	}
+	&._sm {
+		border-radius: 8px;
+		padding: 13px 47px 14px;
+		font-size: 18px;
+		line-height: 21px;
+		@include max-screen($desktop-2) {
+			padding: 8px 32px 9px;
+		}
+		@include max-screen($mobile) {
+			font-size: 16px;
+			padding: 11px 21px 10px;
+		}
+	}
+	&._xsm {
+		border-radius: 8px;
+		font-size: 16px;
+		line-height: 16px;
+		padding: 13px;
+		@include max-screen($mobile) {
+			padding: 10px;
+		}
+	}
+	&._special {
+		background-color: $c-kournikova;
+		color: $c-catalina-blue;
+		border-color: $c-kournikova;
+		&:hover {
+			background-color: $c-gold-tips;
+			border-color: $c-gold-tips;
+		}
+		&:active {
+			background-color: $c-gold-tips;
+			border-color: $c-gold-tips;
+			box-shadow: inset 0px 1px 2px $c-dark-goldenrod;
+		}
+	}
+	&._ghost {
+		color: $c-dodger-blue;
+		background-color: transparent;
+		&:hover {
+			color: $c-white;
+			background-color: $c-dodger-blue-2;
+		}
+		&:active {
+			color: $c-white;
+			background-color: $c-dodger-blue-2;
+			box-shadow: inset 0px 1px 2px $c-denim;
+		}
+	}
+}

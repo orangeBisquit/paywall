@@ -1,0 +1,121 @@
+<div class="hero-wrapper">
+	{% include 'components/header/header.nunj' %}
+
+	<section class="hero" id="hero">
+		<div class="hero__container container">
+			<div class="hero__top-content">
+				<div class='hero__bulb-icon-wrapper'>
+					{{ icon({
+							iconName: 'bulb',
+							className: 'hero__bulb-icon'
+					}) }}
+				</div>
+				{{ icon({
+						iconName: 'arrow-big',
+						className: 'hero__arrow-icon'
+				}) }}
+				{{ icon({
+						iconName: 'arrow-short',
+						className: 'hero__arrow-short-icon'
+				}) }}
+				<h2 class="hero__title _top">Продавайте контент</h2>
+			</div>
+			<div class="hero__center-content">
+				<h3 class="hero__sub-title">по подписке</h3>
+				<div class="hero__tags">
+					<ul class="hero__tags-list _top">
+						<li class="hero__tags-item _1">
+							<img class="hero__tags-img" src="assets/images/hero/tag-1.png" alt="" aria-hidden="true" width="27" height="27"/>
+							Контент для фанатов</li>
+						<li class="hero__tags-item _2">
+							<img class="hero__tags-img" src="assets/images/hero/tag-2.png" alt="" aria-hidden="true" width="28" height="28"/>
+							Аналитика</li>
+						<li class="hero__tags-item _3">
+							<img class="hero__tags-img" src="assets/images/hero/tag-3.png" alt="" aria-hidden="true" width="32" height="32"/>
+							Обучение</li>
+						<li class="hero__tags-item _4">
+							<img class="hero__tags-img" src="assets/images/hero/tag-4.png" alt="" aria-hidden="true" width="25" height="25"/>
+							Инсайды</li>
+						<li class="hero__tags-item _5">
+							<img class="hero__tags-img" src="assets/images/hero/tag-5.png" alt="" aria-hidden="true" width="29" height="29"/>
+							Закрытые чаты</li>
+						<li class="hero__tags-item _6">
+							<img class="hero__tags-img" src="assets/images/hero/tag-6.png" alt="" aria-hidden="true" width="32" height="32"/>
+							Мастер-классы</li>
+						<li class="hero__tags-item _7">
+							<img class="hero__tags-img" src="assets/images/hero/tag-7.png" alt="" aria-hidden="true" width="26" height="26"/>
+							Подкасты
+							</li>
+						<li class="hero__tags-item _8">
+							<img class="hero__tags-img" src="assets/images/hero/tag-8.png" alt="" aria-hidden="true" width="33" height="33"/>
+							Бекстейджи</li>
+					</ul>
+				</div>
+			</div>
+			<div class="hero__bottom-content">
+				<div class="hero__bottom-left-content">
+					<p class="hero__text">
+						<span  class="hero__text-desktop">Создавайте контент, привлекайте подписчиков&nbsp;&mdash; остальное мы&nbsp;возьмем на&nbsp;себя</span>
+						<span  class="hero__text-mobile">Расширяйте свой медиа-бизнес с&nbsp;помощью закрытых каналов и&nbsp;чатов в&nbsp;Telegram</span>
+					</p>
+					<button class="hero__button-begin button">
+						<span class="hero__button-begin-desktop">Начать зарабатывать</span>
+						<span class="hero__button-begin-mobile">Начать пользоваться</span>
+					</button>
+					<button class="hero__button-demo button _ghost">
+						<span class="hero__button-demo-desktop">Демо-доступ</span>
+						<span class="hero__button-demo-mobile">Демо</span>
+					</button>
+				</div>
+				<div class="hero__bottom-right-content">
+					<h2 class="hero__title _bottom">через Paywall</h2>
+					{{ icon({
+							iconName: 'arrow-big',
+							className: 'hero__arrow-icon-down'
+					}) }}
+					{{ icon({
+							iconName: 'arrow-short-down',
+							className: 'hero__arrow-icon-down-short'
+					}) }}
+					<div class="hero__subscribers-list">
+						<div class="hero__subscriber" data-auto-show="default">
+							<img class="hero__subscriber-img" src="assets/images/hero/subscriber-1.png" alt="" aria-hidden="true" width="35" height="35"/>
+							<div class="hero__subscriber-content">
+								<p class="hero__subscriber-text">Новый подписчик</p>
+								<p class="hero__subscriber-name">Иван Артемьев</p>
+							</div>
+						</div>
+						<div class="hero__subscriber" data-auto-show="default">
+							<img class="hero__subscriber-img" src="assets/images/hero/subscriber-2.png" alt="" aria-hidden="true" width="35" height="35"/>
+							<div class="hero__subscriber-content">
+								<p class="hero__subscriber-text">Новый подписчик</p>
+								<p class="hero__subscriber-name">Артем Ситко</p>
+							</div>
+						</div>
+						<div class="hero__subscriber" data-auto-show="default">
+							<img class="hero__subscriber-img" src="assets/images/hero/subscriber-3.png" alt="" aria-hidden="true" width="35" height="35"/>
+							<div class="hero__subscriber-content">
+								<p class="hero__subscriber-text">Новый подписчик</p>
+								<p class="hero__subscriber-name">Настя Туманова</p>
+							</div>
+						</div>
+						<div class="hero__subscriber" data-auto-show="default">
+							<img class="hero__subscriber-img" src="assets/images/hero/subscriber-4.png" alt="" aria-hidden="true" width="35" height="35"/>
+							<div class="hero__subscriber-content">
+								<p class="hero__subscriber-text">Новый подписчик</p>
+								<p class="hero__subscriber-name">Лика Афанасьева</p>
+							</div>
+						</div>
+						<div class="hero__subscriber" data-auto-show="default">
+							<img class="hero__subscriber-img" src="assets/images/hero/subscriber-5.png" alt="" aria-hidden="true" width="35" height="35"/>
+							<div class="hero__subscriber-content">
+								<p class="hero__subscriber-text">Новый подписчик</p>
+								<p class="hero__subscriber-name">Стас Игнатов</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>

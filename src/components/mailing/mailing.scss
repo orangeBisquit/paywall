@@ -1,0 +1,74 @@
+.mailing {
+	$parent-selector: &;
+	display: none;
+	z-index: 102;
+	position: fixed;
+	&._open {
+		display: block;
+	}
+	&__overlay {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba($c-dodger-blue, 0.4);
+	}
+	&__modal {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		border-radius: 20px;
+		background-color: $c-white;
+		box-shadow: 0px 0px 35px 1px rgba(64, 153, 247, 0.3);
+		transform: translate(-50%, -50%);
+		@include smoothValue('padding', 30px, 64px, $mobile, $desktop);
+	}
+	&__form {
+		display: flex;
+		flex-direction: column;
+	}
+	&__text {
+		color: $c-catalina-blue;
+		line-height: 140%;
+		@include smoothValue('font-size', 25px, 46px, $mobile, $desktop);
+		@include smoothValue('margin-bottom', 30px, 44px, $mobile, $desktop);
+	}
+	&__input-email,
+	&__input-email::placeholder {
+		font-family: $default-font-family;
+		color: rgba($c-catalina-blue, 0.5);
+		line-height: 116%;
+		text-align: center;
+		@include smoothValue('font-size', 20px, 36px, $mobile, $desktop);
+	}
+	&__input-email {
+		color: rgba($c-catalina-blue, 0.9);
+		border-radius: 16px;
+		border: 1px solid rgba($c-catalina-blue, 0.5);
+		@include smoothValue('margin-bottom', 30px, 43px, $mobile, $desktop);
+		@include smoothValue('padding', 15px, 27px, $mobile, $desktop);
+	}
+	&__button-close {
+		position: absolute;
+		top: 24px;
+		right: 24px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0;
+		border: 0;
+		background-color: transparent;
+		color: $c-grey-chateau;
+		cursor: pointer;
+		@include smoothValue('width', 16px, 24px, $mobile, $desktop);
+		@include smoothValue('height', 16px, 24px, $mobile, $desktop);
+		&:hover {
+			color: $c-dodger-blue;
+		}
+	}
+	&__button-close-icon {
+		@include smoothValue('width', 16px, 24px, $mobile, $desktop);
+		@include smoothValue('height', 16px, 24px, $mobile, $desktop);
+	}
+}
