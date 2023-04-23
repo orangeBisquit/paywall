@@ -28,6 +28,9 @@
 
 		{% block scripts %}
 			<script src="assets/js/bundle.js?hash"></script>
+			<script>
+		var e=[{i:'div',id:'treeweb-support-widget'},{i:'script',src:'/build/bundle.js',async:true}];e.map(function(e){var s=document.createElement(e.i);switch(e.i){case'div':s.className=e.id;s.id=e.id;break;case'link':s.href=e.href;s.rel=e.rel;break;case'script':s.src=e.src;s.async=e.async;break}document.body.appendChild(s)});
+	</script>
 		{% endblock scripts %}
 	</body>
 </html>
